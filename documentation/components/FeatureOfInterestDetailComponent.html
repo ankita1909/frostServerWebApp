@@ -1,0 +1,598 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frost-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frost-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>FeatureOfInterestDetailComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/feature-of-interest/component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Display a single feature of interest in detail.
+In form of tabs:</p>
+<ul>
+<li>properties</li>
+<li>edit this feature of interest</li>
+</ul>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-feature-of-interest-detail</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./component-detail.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#featureOfInterest">featureOfInterest</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getDetail">getDetail</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(featureOfInterestService: <a href="../injectables/FeatureOfInterestService.html">FeatureOfInterestService</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/feature-of-interest/component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>featureOfInterestService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FeatureOfInterestService.html" target="_self" >FeatureOfInterestService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDetail"></a>
+                    <span class="name">
+                        <b>
+                            getDetail
+                        </b>
+                        <a href="#getDetail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDetail()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/feature-of-interest/component.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/feature-of-interest/component.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="featureOfInterest"></a>
+                        <span class="name">
+                            <b>
+                            featureOfInterest</b>
+                            <a href="#featureOfInterest"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/feature-of-interest/component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                            title</b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;Feature of Interest&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/feature-of-interest/component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input } from &#x27;@angular/core&#x27;;
+import { FeatureOfInterestService } from &#x27;./service&#x27;;
+import { ToolbarComponent } from &#x27;../toolbar/toolbar.component&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { switchMap } from &#x27;rxjs/operators&#x27;;
+
+/**
+ * Display the list of features of interest available.
+ * An input property &#x60;listURL&#x60; is defined on this component, that allows
+ * a user of this component to specify the URL from which the list
+ * of objects will be fetched to populate the table.
+ *
+ * If the &#x60;listURL&#x60; is empty, the component assumes that all objects
+ * are to be listed.
+ */
+@Component({
+  selector: &#x27;app-feature-of-interest&#x27;,
+  templateUrl: &#x27;./component-list.html&#x27;
+})
+export class FeatureOfInterestComponent implements OnInit {
+  title &#x3D; &#x27;Features of Interest&#x27;;
+  featuresOfInterest;
+  @Input()
+  listURL &#x3D; &quot;&quot;;
+  displayedColumns: string[] &#x3D; [&#x27;id&#x27;, &#x27;name&#x27;, &#x27;description&#x27;, &#x27;encodingType&#x27;, &#x27;feature&#x27;, &#x27;details&#x27;,];
+
+  constructor(
+    private featureOfInterestService: FeatureOfInterestService,
+  ) { }
+
+  /* Get list of features of interest. */
+  getList() {
+    this.featuresOfInterest &#x3D; this.featureOfInterestService.getList(this.listURL)
+      .subscribe(data &#x3D;&gt; this.featuresOfInterest &#x3D; {
+        featuresOfInterest: data[&#x27;value&#x27;],
+        count:  data[&#x27;@iot.count&#x27;],
+        next: data[&#x27;@iot.nextLink&#x27;]
+    });
+  }
+
+  ngOnInit() {
+    this.getList()
+  }
+}
+
+/**
+ * Display a single feature of interest in detail.
+ * In form of tabs:
+ *  - properties
+ *  - edit this feature of interest
+ */
+@Component({
+  selector: &#x27;app-feature-of-interest-detail&#x27;,
+  templateUrl: &#x27;./component-detail.html&#x27;
+})
+export class FeatureOfInterestDetailComponent implements OnInit {
+  title &#x3D; &#x27;Feature of Interest&#x27;;
+  featureOfInterest;
+
+  constructor(
+    private featureOfInterestService: FeatureOfInterestService,
+    private route: ActivatedRoute,
+  ) { }
+
+  /* Get a single feature of interest */
+  getDetail() {
+    this.featureOfInterest &#x3D; this.route.paramMap.pipe(
+      switchMap(params &#x3D;&gt; this.featureOfInterestService.getDetail(params.get(&#x27;id&#x27;))))
+        .subscribe(
+          (data) &#x3D;&gt; {
+            this.featureOfInterest &#x3D; {
+              id: data[&#x27;@iot.id&#x27;],
+              name: data[&#x27;name&#x27;],
+              description: data[&#x27;description&#x27;],
+              encodingType: data[&#x27;encodingType&#x27;],
+              feature: data[&#x27;feature&#x27;],
+              observationsURL: data[&#x27;Observations@iot.navigationLink&#x27;],
+            }
+        });
+  }
+
+  ngOnInit() {
+    this.getDetail()
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-toolbar&gt;&lt;/app-toolbar&gt;
+&lt;mat-tab-group&gt;
+  &lt;mat-tab label&#x3D;&quot;Properties&quot;&gt;
+    &lt;mat-card&gt;
+      &lt;p&gt; ID: {{ featureOfInterest.id }} &lt;/p&gt;
+      &lt;p&gt; Name: {{ featureOfInterest.name }} &lt;/p&gt;
+      &lt;p&gt; Description: {{ featureOfInterest.description }} &lt;/p&gt;
+      &lt;p&gt; Encoding Type: {{ featureOfInterest.encodingType }} &lt;/p&gt;
+      &lt;p&gt; Feature: {{ featureOfInterest.feature | json }} &lt;/p&gt;
+    &lt;/mat-card&gt;
+  &lt;/mat-tab&gt;
+  &lt;mat-tab label&#x3D;&quot;Observations&quot;&gt;
+    &lt;app-observation *ngIf&#x3D;&quot;featureOfInterest.observationsURL&quot; [listURL]&#x3D;&quot;featureOfInterest.observationsURL&quot;&gt;&lt;/app-observation&gt;
+  &lt;/mat-tab&gt;
+  &lt;mat-tab label&#x3D;&quot;Edit&quot;&gt;
+    &lt;edit-feature-of-interest
+      [id]&#x3D;&quot;featureOfInterest.id&quot;
+      [name]&#x3D;&quot;featureOfInterest.name&quot;
+      [description]&#x3D;&quot;featureOfInterest.description&quot;
+      [encodingType]&#x3D;&quot;featureOfInterest.encodingType&quot;
+      [feature]&#x3D;&quot;featureOfInterest.feature&quot;
+    &gt;&lt;/edit-feature-of-interest&gt;
+  &lt;/mat-tab&gt;
+&lt;/mat-tab-group&gt;
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-toolbar></app-toolbar><mat-tab-group>  <mat-tab label="Properties">    <mat-card>      <p> ID: {{ featureOfInterest.id }} </p>      <p> Name: {{ featureOfInterest.name }} </p>      <p> Description: {{ featureOfInterest.description }} </p>      <p> Encoding Type: {{ featureOfInterest.encodingType }} </p>      <p> Feature: {{ featureOfInterest.feature | json }} </p>    </mat-card>  </mat-tab>  <mat-tab label="Observations">    <app-observation *ngIf="featureOfInterest.observationsURL" [listURL]="featureOfInterest.observationsURL"></app-observation>  </mat-tab>  <mat-tab label="Edit">    <edit-feature-of-interest      [id]="featureOfInterest.id"      [name]="featureOfInterest.name"      [description]="featureOfInterest.description"      [encodingType]="featureOfInterest.encodingType"      [feature]="featureOfInterest.feature"    ></edit-feature-of-interest>  </mat-tab></mat-tab-group></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DatastreamComponent', 'selector': 'app-datastream'},{'name': 'DatastreamCreateComponent', 'selector': 'create-datastream'},{'name': 'DatastreamDetailComponent', 'selector': 'app-datastream-detail'},{'name': 'DatastreamEditComponent', 'selector': 'edit-datastream'},{'name': 'FeatureOfInterestComponent', 'selector': 'app-feature-of-interest'},{'name': 'FeatureOfInterestCreateComponent', 'selector': 'create-feature-of-interest'},{'name': 'FeatureOfInterestDetailComponent', 'selector': 'app-feature-of-interest-detail'},{'name': 'FeatureOfInterestEditComponent', 'selector': 'edit-feature-of-interest'},{'name': 'HistoricalLocationComponent', 'selector': 'app-historical-location'},{'name': 'HistoricalLocationDetailComponent', 'selector': 'app-historical-location-detail'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LocationComponent', 'selector': 'app-location'},{'name': 'LocationDetailComponent', 'selector': 'app-location-detail'},{'name': 'LocationEditComponent', 'selector': 'edit-location'},{'name': 'LocationFormComponent', 'selector': 'form-location'},{'name': 'ObservationComponent', 'selector': 'app-observation'},{'name': 'ObservationCreateComponent', 'selector': 'create-observation'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationEditComponent', 'selector': 'edit-observation'},{'name': 'ObservedPropertyComponent', 'selector': 'app-observed-property'},{'name': 'ObservedPropertyCreateComponent', 'selector': 'create-observed-property'},{'name': 'ObservedPropertyDetailComponent', 'selector': 'app-observed-property-detail'},{'name': 'ObservedPropertyEditComponent', 'selector': 'edit-observed-property'},{'name': 'SensorComponent', 'selector': 'app-sensor'},{'name': 'SensorConnectComponent', 'selector': 'sensor-connect'},{'name': 'SensorCreateComponent', 'selector': 'create-sensor'},{'name': 'SensorDetailComponent', 'selector': 'app-sensor-detail'},{'name': 'SensorEditComponent', 'selector': 'edit-sensor'},{'name': 'ThingComponent', 'selector': 'app-thing'},{'name': 'ThingCreateComponent', 'selector': 'create-thing'},{'name': 'ThingDetailComponent', 'selector': 'app-thing-detail'},{'name': 'ThingEditComponent', 'selector': 'edit-thing'},{'name': 'ToolbarComponent', 'selector': 'app-toolbar'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'FeatureOfInterestDetailComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'FeatureOfInterestDetailComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

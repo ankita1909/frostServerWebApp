@@ -1,0 +1,24 @@
+<app-toolbar></app-toolbar>
+<mat-tab-group>
+  <mat-tab label="Properties">
+    <mat-card>
+      <p> ID: {{ featureOfInterest.id }} </p>
+      <p> Name: {{ featureOfInterest.name }} </p>
+      <p> Description: {{ featureOfInterest.description }} </p>
+      <p> Encoding Type: {{ featureOfInterest.encodingType }} </p>
+      <p> Feature: {{ featureOfInterest.feature | json }} </p>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Observations">
+    <app-observation *ngIf="featureOfInterest.observationsURL" [listURL]="featureOfInterest.observationsURL"></app-observation>
+  </mat-tab>
+  <mat-tab label="Edit">
+    <edit-feature-of-interest
+      [id]="featureOfInterest.id"
+      [name]="featureOfInterest.name"
+      [description]="featureOfInterest.description"
+      [encodingType]="featureOfInterest.encodingType"
+      [feature]="featureOfInterest.feature"
+    ></edit-feature-of-interest>
+  </mat-tab>
+</mat-tab-group>

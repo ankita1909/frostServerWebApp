@@ -1,0 +1,844 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frost-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frost-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>HomeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/home.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-home</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./home.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#datastreams">datastreams</a>
+                            </li>
+                            <li>
+                                <a href="#featuresOfInterest">featuresOfInterest</a>
+                            </li>
+                            <li>
+                                <a href="#historicalLocations">historicalLocations</a>
+                            </li>
+                            <li>
+                                <a href="#locations">locations</a>
+                            </li>
+                            <li>
+                                <a href="#observations">observations</a>
+                            </li>
+                            <li>
+                                <a href="#observedProperties">observedProperties</a>
+                            </li>
+                            <li>
+                                <a href="#sensors">sensors</a>
+                            </li>
+                            <li>
+                                <a href="#things">things</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getList">getList</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(locationService: <a href="../injectables/LocationService.html">LocationService</a>, historicalLocationService: <a href="../injectables/HistoricalLocationService.html">HistoricalLocationService</a>, thingService: <a href="../injectables/ThingService.html">ThingService</a>, sensorService: <a href="../injectables/SensorService.html">SensorService</a>, datastreamService: <a href="../injectables/DatastreamService.html">DatastreamService</a>, observationService: <a href="../injectables/ObservationService.html">ObservationService</a>, featureOfInterestService: <a href="../injectables/FeatureOfInterestService.html">FeatureOfInterestService</a>, observedPropertyService: <a href="../injectables/ObservedPropertyService.html">ObservedPropertyService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/home.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>locationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LocationService.html" target="_self" >LocationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>historicalLocationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/HistoricalLocationService.html" target="_self" >HistoricalLocationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>thingService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ThingService.html" target="_self" >ThingService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sensorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SensorService.html" target="_self" >SensorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>datastreamService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DatastreamService.html" target="_self" >DatastreamService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>observationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ObservationService.html" target="_self" >ObservationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>featureOfInterestService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FeatureOfInterestService.html" target="_self" >FeatureOfInterestService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>observedPropertyService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ObservedPropertyService.html" target="_self" >ObservedPropertyService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getList"></a>
+                    <span class="name">
+                        <b>
+                            getList
+                        </b>
+                        <a href="#getList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/home.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/home.component.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="datastreams"></a>
+                        <span class="name">
+                            <b>
+                            datastreams</b>
+                            <a href="#datastreams"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/home.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="featuresOfInterest"></a>
+                        <span class="name">
+                            <b>
+                            featuresOfInterest</b>
+                            <a href="#featuresOfInterest"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/home.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="historicalLocations"></a>
+                        <span class="name">
+                            <b>
+                            historicalLocations</b>
+                            <a href="#historicalLocations"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/home.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="locations"></a>
+                        <span class="name">
+                            <b>
+                            locations</b>
+                            <a href="#locations"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/home.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="observations"></a>
+                        <span class="name">
+                            <b>
+                            observations</b>
+                            <a href="#observations"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/home.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="observedProperties"></a>
+                        <span class="name">
+                            <b>
+                            observedProperties</b>
+                            <a href="#observedProperties"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/home.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sensors"></a>
+                        <span class="name">
+                            <b>
+                            sensors</b>
+                            <a href="#sensors"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/home.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="things"></a>
+                        <span class="name">
+                            <b>
+                            things</b>
+                            <a href="#things"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/home.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { LocationService } from &#x27;./location/location.service&#x27;;
+import { DatastreamService } from &#x27;./datastream/service&#x27;;
+import { ObservationService } from &#x27;./observation/service&#x27;;
+import { ObservedPropertyService } from &#x27;./observed-property/service&#x27;;
+import { HistoricalLocationService } from &#x27;./historical_locations/service&#x27;;
+import { ThingService } from &#x27;./thing/thing.service&#x27;;
+import { SensorService } from &#x27;./sensor/sensor.service&#x27;;
+import { FeatureOfInterestService } from &#x27;./feature-of-interest/service&#x27;;
+
+/* Display the home dashboard.
+ * This component queries all the resources available, and gets their count.
+ * It then renders the dashboard, with all resources, the count, and their
+ * corresponding link.
+ */
+@Component({
+  selector: &#x27;app-home&#x27;,
+  templateUrl: &#x27;./home.component.html&#x27;,
+  // styleUrls: [&#x27;./toolbar.component.css&#x27;],
+})
+export class HomeComponent implements OnInit {
+  constructor(
+    private locationService: LocationService,
+    private historicalLocationService: HistoricalLocationService,
+    private thingService: ThingService,
+    private sensorService: SensorService,
+    private datastreamService: DatastreamService,
+    private observationService: ObservationService,
+    private featureOfInterestService: FeatureOfInterestService,
+    private observedPropertyService: ObservedPropertyService,
+  ) { }
+
+  locations;
+  things;
+  sensors;
+  historicalLocations;
+  datastreams;
+  observations;
+  featuresOfInterest;
+  observedProperties;
+
+  /* Get the list endpoint of all resources, along with count */
+  getList() {
+    this.locations &#x3D; this.locationService.getLocationsList(&#x27;&#x27;)
+      .subscribe(data &#x3D;&gt; this.locations &#x3D; data[&#x27;@iot.count&#x27;]);
+    this.things &#x3D; this.thingService.getThingsList(&#x27;&#x27;)
+      .subscribe(data &#x3D;&gt; this.things &#x3D; data[&#x27;@iot.count&#x27;]);
+    this.sensors &#x3D; this.sensorService.getSensorsList()
+      .subscribe(data &#x3D;&gt; this.sensors &#x3D; data[&#x27;@iot.count&#x27;]);
+    this.historicalLocations &#x3D; this.historicalLocationService.getLocationsList()
+      .subscribe(data &#x3D;&gt; this.historicalLocations &#x3D; data[&#x27;@iot.count&#x27;]);
+    this.datastreams &#x3D; this.datastreamService.getList(&#x27;&#x27;)
+      .subscribe(data &#x3D;&gt; this.datastreams &#x3D; data[&#x27;@iot.count&#x27;]);
+    this.observations &#x3D; this.observationService.getList(&#x27;&#x27;)
+      .subscribe(data &#x3D;&gt; this.observations &#x3D; data[&#x27;@iot.count&#x27;]);
+    this.featuresOfInterest &#x3D; this.featureOfInterestService.getList(&#x27;&#x27;)
+      .subscribe(data &#x3D;&gt; this.featuresOfInterest &#x3D; data[&#x27;@iot.count&#x27;]);
+    this.observedProperties &#x3D; this.observedPropertyService.getList(&#x27;&#x27;)
+      .subscribe(data &#x3D;&gt; this.observedProperties &#x3D; data[&#x27;@iot.count&#x27;]);
+  }
+
+  ngOnInit() {
+    this.getList()
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;style&gt;
+ .mat-card {
+   min-width: 90%;
+ }
+&lt;/style&gt;
+
+&lt;app-toolbar&gt;&lt;/app-toolbar&gt;
+
+&lt;mat-grid-list cols&#x3D;&quot;3&quot; rowHeight&#x3D;&quot;100px&quot; gutterSize&#x3D;&quot;25&quot;&gt;
+  &lt;a routerLink&#x3D;&quot;/locations&quot;&gt;
+    &lt;mat-grid-tile&gt;
+      &lt;mat-card&gt;
+        &lt;mat-card-header&gt;
+          &lt;mat-card-title&gt; {{ locations }}&lt;/mat-card-title&gt;
+          &lt;mat-card-subtitle&gt; Locations &lt;/mat-card-subtitle&gt;
+        &lt;/mat-card-header&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+  &lt;/a&gt;
+
+  &lt;a routerLink&#x3D;&quot;/historical-locations&quot;&gt;
+    &lt;mat-grid-tile&gt;
+      &lt;mat-card&gt;
+        &lt;mat-card-header&gt;
+          &lt;mat-card-title&gt; {{ historicalLocations }}&lt;/mat-card-title&gt;
+          &lt;mat-card-subtitle&gt; Historical Locations &lt;/mat-card-subtitle&gt;
+        &lt;/mat-card-header&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+  &lt;/a&gt;
+
+  &lt;a routerLink&#x3D;&quot;/things&quot;&gt;
+    &lt;mat-grid-tile&gt;
+      &lt;mat-card&gt;
+        &lt;mat-card-header&gt;
+          &lt;mat-card-title&gt; {{ things }}&lt;/mat-card-title&gt;
+          &lt;mat-card-subtitle&gt; Things &lt;/mat-card-subtitle&gt;
+        &lt;/mat-card-header&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+  &lt;/a&gt;
+
+  &lt;a routerLink&#x3D;&quot;/sensors&quot;&gt;
+    &lt;mat-grid-tile&gt;
+      &lt;mat-card&gt;
+        &lt;mat-card-header&gt;
+          &lt;mat-card-title&gt; {{ sensors }}&lt;/mat-card-title&gt;
+          &lt;mat-card-subtitle&gt; Sensors &lt;/mat-card-subtitle&gt;
+        &lt;/mat-card-header&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+  &lt;/a&gt;
+
+  &lt;a routerLink&#x3D;&quot;/datastreams&quot;&gt;
+    &lt;mat-grid-tile&gt;
+      &lt;mat-card&gt;
+        &lt;mat-card-header&gt;
+          &lt;mat-card-title&gt; {{ datastreams }}&lt;/mat-card-title&gt;
+          &lt;mat-card-subtitle&gt; Datastreams &lt;/mat-card-subtitle&gt;
+        &lt;/mat-card-header&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+  &lt;/a&gt;
+
+  &lt;a routerLink&#x3D;&quot;/observations&quot;&gt;
+    &lt;mat-grid-tile&gt;
+      &lt;mat-card&gt;
+        &lt;mat-card-header&gt;
+          &lt;mat-card-title&gt; {{ observations }}&lt;/mat-card-title&gt;
+          &lt;mat-card-subtitle&gt; Observations &lt;/mat-card-subtitle&gt;
+        &lt;/mat-card-header&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+  &lt;/a&gt;
+
+  &lt;a routerLink&#x3D;&quot;/features-of-interest&quot;&gt;
+    &lt;mat-grid-tile&gt;
+      &lt;mat-card&gt;
+        &lt;mat-card-header&gt;
+          &lt;mat-card-title&gt; {{ featuresOfInterest }}&lt;/mat-card-title&gt;
+          &lt;mat-card-subtitle&gt; Features of Interest &lt;/mat-card-subtitle&gt;
+        &lt;/mat-card-header&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+  &lt;/a&gt;
+
+  &lt;a routerLink&#x3D;&quot;/observed-properties&quot;&gt;
+    &lt;mat-grid-tile&gt;
+      &lt;mat-card&gt;
+        &lt;mat-card-header&gt;
+          &lt;mat-card-title&gt; {{ observedProperties }}&lt;/mat-card-title&gt;
+          &lt;mat-card-subtitle&gt; Observed Properties &lt;/mat-card-subtitle&gt;
+        &lt;/mat-card-header&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+  &lt;/a&gt;
+&lt;/mat-grid-list&gt;
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><style> .mat-card {   min-width: 90%; }</style><app-toolbar></app-toolbar><mat-grid-list cols="3" rowHeight="100px" gutterSize="25">  <a routerLink="/locations">    <mat-grid-tile>      <mat-card>        <mat-card-header>          <mat-card-title> {{ locations }}</mat-card-title>          <mat-card-subtitle> Locations </mat-card-subtitle>        </mat-card-header>      </mat-card>    </mat-grid-tile>  </a>  <a routerLink="/historical-locations">    <mat-grid-tile>      <mat-card>        <mat-card-header>          <mat-card-title> {{ historicalLocations }}</mat-card-title>          <mat-card-subtitle> Historical Locations </mat-card-subtitle>        </mat-card-header>      </mat-card>    </mat-grid-tile>  </a>  <a routerLink="/things">    <mat-grid-tile>      <mat-card>        <mat-card-header>          <mat-card-title> {{ things }}</mat-card-title>          <mat-card-subtitle> Things </mat-card-subtitle>        </mat-card-header>      </mat-card>    </mat-grid-tile>  </a>  <a routerLink="/sensors">    <mat-grid-tile>      <mat-card>        <mat-card-header>          <mat-card-title> {{ sensors }}</mat-card-title>          <mat-card-subtitle> Sensors </mat-card-subtitle>        </mat-card-header>      </mat-card>    </mat-grid-tile>  </a>  <a routerLink="/datastreams">    <mat-grid-tile>      <mat-card>        <mat-card-header>          <mat-card-title> {{ datastreams }}</mat-card-title>          <mat-card-subtitle> Datastreams </mat-card-subtitle>        </mat-card-header>      </mat-card>    </mat-grid-tile>  </a>  <a routerLink="/observations">    <mat-grid-tile>      <mat-card>        <mat-card-header>          <mat-card-title> {{ observations }}</mat-card-title>          <mat-card-subtitle> Observations </mat-card-subtitle>        </mat-card-header>      </mat-card>    </mat-grid-tile>  </a>  <a routerLink="/features-of-interest">    <mat-grid-tile>      <mat-card>        <mat-card-header>          <mat-card-title> {{ featuresOfInterest }}</mat-card-title>          <mat-card-subtitle> Features of Interest </mat-card-subtitle>        </mat-card-header>      </mat-card>    </mat-grid-tile>  </a>  <a routerLink="/observed-properties">    <mat-grid-tile>      <mat-card>        <mat-card-header>          <mat-card-title> {{ observedProperties }}</mat-card-title>          <mat-card-subtitle> Observed Properties </mat-card-subtitle>        </mat-card-header>      </mat-card>    </mat-grid-tile>  </a></mat-grid-list></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DatastreamComponent', 'selector': 'app-datastream'},{'name': 'DatastreamCreateComponent', 'selector': 'create-datastream'},{'name': 'DatastreamDetailComponent', 'selector': 'app-datastream-detail'},{'name': 'DatastreamEditComponent', 'selector': 'edit-datastream'},{'name': 'FeatureOfInterestComponent', 'selector': 'app-feature-of-interest'},{'name': 'FeatureOfInterestCreateComponent', 'selector': 'create-feature-of-interest'},{'name': 'FeatureOfInterestDetailComponent', 'selector': 'app-feature-of-interest-detail'},{'name': 'FeatureOfInterestEditComponent', 'selector': 'edit-feature-of-interest'},{'name': 'HistoricalLocationComponent', 'selector': 'app-historical-location'},{'name': 'HistoricalLocationDetailComponent', 'selector': 'app-historical-location-detail'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LocationComponent', 'selector': 'app-location'},{'name': 'LocationDetailComponent', 'selector': 'app-location-detail'},{'name': 'LocationEditComponent', 'selector': 'edit-location'},{'name': 'LocationFormComponent', 'selector': 'form-location'},{'name': 'ObservationComponent', 'selector': 'app-observation'},{'name': 'ObservationCreateComponent', 'selector': 'create-observation'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationEditComponent', 'selector': 'edit-observation'},{'name': 'ObservedPropertyComponent', 'selector': 'app-observed-property'},{'name': 'ObservedPropertyCreateComponent', 'selector': 'create-observed-property'},{'name': 'ObservedPropertyDetailComponent', 'selector': 'app-observed-property-detail'},{'name': 'ObservedPropertyEditComponent', 'selector': 'edit-observed-property'},{'name': 'SensorComponent', 'selector': 'app-sensor'},{'name': 'SensorConnectComponent', 'selector': 'sensor-connect'},{'name': 'SensorCreateComponent', 'selector': 'create-sensor'},{'name': 'SensorDetailComponent', 'selector': 'app-sensor-detail'},{'name': 'SensorEditComponent', 'selector': 'edit-sensor'},{'name': 'ThingComponent', 'selector': 'app-thing'},{'name': 'ThingCreateComponent', 'selector': 'create-thing'},{'name': 'ThingDetailComponent', 'selector': 'app-thing-detail'},{'name': 'ThingEditComponent', 'selector': 'edit-thing'},{'name': 'ToolbarComponent', 'selector': 'app-toolbar'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomeComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<app-toolbar></app-toolbar>
+<mat-tab-group>
+  <mat-tab label="Properties">
+    <mat-card>
+      <p> ID: {{ observedProperty.id }} </p>
+      <p> Name: {{ observedProperty.name }} </p>
+      <p> Description: {{ observedProperty.description }} </p>
+      <p> Definition: {{ observedProperty.definition }} </p>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Datastreams">
+    <app-datastream *ngIf="observedProperty.datastreamsURL" [listURL]="observedProperty.datastreamsURL"></app-datastream>
+  </mat-tab>
+  <mat-tab label="Edit">
+    <edit-observed-property
+      [id]="observedProperty.id"
+      [name]="observedProperty.name"
+      [description]="observedProperty.description"
+      [definition]="observedProperty.definition"
+    ></edit-observed-property>
+  </mat-tab>
+</mat-tab-group>

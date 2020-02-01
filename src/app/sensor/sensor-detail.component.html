@@ -1,0 +1,19 @@
+<app-toolbar></app-toolbar>
+<mat-tab-group>
+  <mat-tab label="Properties">
+    <mat-card>
+      <p> Name: {{ sensor.name }} </p>
+      <p> Description: {{ sensor.description }} </p>
+      <p> Metadata: {{ sensor.metadata }} </p>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Edit">
+    <edit-sensor
+      [id]="sensor.id"
+      [name]="sensor.name"
+      [description]="sensor.description"
+      [encodingType]="sensor.encodingType"
+      [metadata]="sensor.metadata"
+    ></edit-sensor>
+  </mat-tab>
+</mat-tab-group>
