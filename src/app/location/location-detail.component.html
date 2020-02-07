@@ -1,0 +1,14 @@
+<app-toolbar></app-toolbar>
+<mat-tab-group>
+  <mat-tab label="Properties">
+    <mat-card>
+      <p> Name: {{ location.name }} </p>
+      <p> Description: {{ location.description }} </p>
+      <p> Location: {{ location.location | json }} </p>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Things">
+    <app-thing *ngIf="location.thingsURL" [listURL]="location.thingsURL"></app-thing>
+  </mat-tab>
+</mat-tab-group>

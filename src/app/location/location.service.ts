@@ -12,13 +12,19 @@ export interface Location {
 })
 export class LocationService {
   listURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/Locations?$count=true";
-  locations: Location[];
+  detailURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/Locations";
+  locations;
+  location;
 
   constructor(private http: HttpClient) { }
 
   getLocationsList() {
-    this.locations = this.http.get(this.listURL)
-    console.log(this.locations)
-    return this.locations
+    this.locations = this.http.get(this.listURL);
+    return this.locations;
+  }
+
+  getLocationDetail(id) {
+    this.location = this.http.get(this.detailURL + "(" + id + ")");
+    return this.location;
   }
 }
