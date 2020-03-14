@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LocationService, Location } from './location.service';
 import { ToolbarComponent } from '../toolbar/toolbar.component';
@@ -12,6 +12,8 @@ import { switchMap } from 'rxjs/operators';
 export class LocationComponent implements OnInit {
   title = 'Locations';
   locations;
+  @Input()
+  listURL = "";
   displayedColumns: string[] = ['name', 'description', 'things',];
 
   constructor(
@@ -19,10 +21,10 @@ export class LocationComponent implements OnInit {
   ) { }
 
   getLocations() {
-    this.locations = this.locationService.getLocationsList()
+    this.locations = this.locationService.getLocationsList(this.listURL)
       .subscribe(data => this.locations = {
         locations: data['value'],
-        count:  data['@iot.count'],
+        count: data['@iot.count'],
         next: data['@iot.nextLink']
     });
   }

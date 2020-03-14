@@ -1,0 +1,23 @@
+<app-toolbar></app-toolbar>
+<mat-tab-group>
+  <mat-tab label="Properties">
+    <mat-card>
+      <p> Name: {{ location.id }} </p>
+      <p> Description: {{ location.time }} </p>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Thing">
+    <mat-card *ngIf="thing">
+      <p> Name: {{ thing.name }} </p>
+      <p> Description: {{ thing.description }} </p>
+      <p>
+        Details: <a [routerLink]="'/thing/' + thing.id "> {{ thing.id }} </a>
+      </p>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Locations">
+    <app-location *ngIf="location.locationsURL" [listURL]="location.locationsURL"></app-location>
+  </mat-tab>
+</mat-tab-group>

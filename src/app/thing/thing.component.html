@@ -18,7 +18,7 @@
   <ng-container matColumnDef="things">
     <th mat-header-cell *matHeaderCellDef> Details </th>
     <td mat-cell *matCellDef="let thing">
-      <a [href]="'/thing/' + thing['@iot.id']">
+      <a [routerLink]="'/thing/' + thing['@iot.id']">
         View
       </a>
     </td>

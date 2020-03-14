@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { LocationComponent, LocationDetailComponent } from './location/location.component';
+import { HistoricalLocationComponent, HistoricalLocationDetailComponent } from './historical_locations/component';
 import { ThingComponent, ThingDetailComponent } from './thing/thing.component';
 import { SensorComponent, SensorDetailComponent } from './sensor/sensor.component';
 import { LocationService } from './location/location.service';
@@ -34,6 +35,8 @@ import {
       AppComponent,
       LocationComponent,
       LocationDetailComponent,
+      HistoricalLocationComponent,
+      HistoricalLocationDetailComponent,
       ThingComponent,
       ThingDetailComponent,
       ToolbarComponent,
@@ -48,6 +51,8 @@ import {
         { path: '', component: HomeComponent },
         { path: 'locations', component: LocationComponent },
         { path: 'location/:id', component: LocationDetailComponent },
+        { path: 'historical-locations', component: HistoricalLocationComponent },
+        { path: 'historical-location/:id', component: HistoricalLocationDetailComponent },
         { path: 'things', component: ThingComponent },
         { path: 'thing/:id', component: ThingDetailComponent },
         { path: 'sensors', component: SensorComponent },

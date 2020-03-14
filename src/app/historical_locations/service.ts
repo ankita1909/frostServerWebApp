@@ -10,16 +10,16 @@ export interface Location {
 @Injectable({
   providedIn: 'root'
 })
-export class LocationService {
-  listURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/Locations?$count=true";
-  detailURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/Locations";
+export class HistoricalLocationService {
+  listURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/HistoricalLocations?$count=true";
+  detailURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/HistoricalLocations";
   locations;
   location;
 
   constructor(private http: HttpClient) { }
 
-  getLocationsList(url) {
-    this.locations = this.http.get(url || this.listURL);
+  getLocationsList() {
+    this.locations = this.http.get(this.listURL);
     return this.locations;
   }
 

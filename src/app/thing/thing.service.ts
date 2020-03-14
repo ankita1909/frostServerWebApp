@@ -17,8 +17,9 @@ export class ThingService {
     return this.things;
   }
 
-  getThingDetail(id) {
-    this.thing = this.http.get(this.detailURL + "(" + id + ")");
+  getThingDetail(id?, url?) {
+    this.thing = this.http.get(url || this.detailURL + "(" + id + ")");
+
     return this.thing;
   }
 }
