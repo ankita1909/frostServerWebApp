@@ -1,0 +1,46 @@
+<style>
+  table {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 70%;
+  }
+</style>
+
+<!-- some other component is calling this. Do not render some parts, like toolbar, in this case -->
+<app-toolbar *ngIf="!listURL"></app-toolbar>
+<table mat-table *ngIf="observedProperties.observedProperties && observedProperties.observedProperties.length > 0" [dataSource]="observedProperties.observedProperties" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let observedProperty"> {{observedProperty.name}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> ID </th>
+    <td mat-cell *matCellDef="let observedProperty"> {{observedProperty['@iot.id']}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="details">
+    <th mat-header-cell *matHeaderCellDef> Details </th>
+    <td mat-cell *matCellDef="let observedProperty">
+      <a [routerLink]="'/observed-property/' + observedProperty['@iot.id']">
+        View
+      </a>
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef> Description </th>
+    <td mat-cell *matCellDef="let observedProperty"> {{observedProperty.description}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="definition">
+    <th mat-header-cell *matHeaderCellDef> Definition </th>
+    <td mat-cell *matCellDef="let observedProperty"> {{observedProperty.definition}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<div *ngIf="!observedProperties.observedProperties || observedProperties.observedProperties.length === 0"> No observed property found! </div>

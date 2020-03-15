@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { LocationService } from './location/location.service';
+import { DatastreamService } from './datastream/service';
+import { ObservationService } from './observation/service';
+import { ObservedPropertyService } from './observed-property/service';
 import { HistoricalLocationService } from './historical_locations/service';
 import { ThingService } from './thing/thing.service';
 import { SensorService } from './sensor/sensor.service';
+import { FeatureOfInterestService } from './feature-of-interest/service';
 
 @Component({
   selector: 'app-home',
@@ -15,14 +19,22 @@ export class HomeComponent implements OnInit {
     private historicalLocationService: HistoricalLocationService,
     private thingService: ThingService,
     private sensorService: SensorService,
+    private datastreamService: DatastreamService,
+    private observationService: ObservationService,
+    private featureOfInterestService: FeatureOfInterestService,
+    private observedPropertyService: ObservedPropertyService,
   ) { }
 
   locations;
   things;
   sensors;
   historicalLocations;
+  datastreams;
+  observations;
+  featuresOfInterest;
+  observedProperties;
 
-  getLocations() {
+  getList() {
     this.locations = this.locationService.getLocationsList('')
       .subscribe(data => this.locations = data['@iot.count']);
     this.things = this.thingService.getThingsList('')
@@ -31,9 +43,17 @@ export class HomeComponent implements OnInit {
       .subscribe(data => this.sensors = data['@iot.count']);
     this.historicalLocations = this.historicalLocationService.getLocationsList()
       .subscribe(data => this.historicalLocations = data['@iot.count']);
+    this.datastreams = this.datastreamService.getList('')
+      .subscribe(data => this.datastreams = data['@iot.count']);
+    this.observations = this.observationService.getList('')
+      .subscribe(data => this.observations = data['@iot.count']);
+    this.featuresOfInterest = this.featureOfInterestService.getList('')
+      .subscribe(data => this.featuresOfInterest = data['@iot.count']);
+    this.observedProperties = this.observedPropertyService.getList('')
+      .subscribe(data => this.observedProperties = data['@iot.count']);
   }
 
   ngOnInit() {
-    this.getLocations()
+    this.getList()
   }
 }

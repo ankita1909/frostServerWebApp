@@ -17,8 +17,8 @@ export class SensorService {
     return this.sensors;
   }
 
-  getSensorDetail(id) {
-    this.sensor = this.http.get(this.detailURL + "(" + id + ")");
+  getSensorDetail(id?, url?) {
+    this.sensor = this.http.get(url || this.detailURL + "(" + id + ")");
     return this.sensor;
   }
 }

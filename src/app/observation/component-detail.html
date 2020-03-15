@@ -1,0 +1,33 @@
+<app-toolbar></app-toolbar>
+<mat-tab-group>
+  <mat-tab label="Properties">
+    <mat-card>
+      <p> ID: {{ observation.id }} </p>
+      <p> Phenomenon Time: {{ observation.phenomenonTime }} </p>
+      <p> Result: {{ observation.result }} </p>
+      <p> Result Time: {{ observation.resultTime }} </p>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Datastream">
+    <mat-card *ngIf="datastream">
+      <p> Name: {{ datastream['@iot.id'] }} </p>
+      <p> Description: {{ datastream.description }} </p>
+      <p> Observation Type: {{ datastream.observationType }} </p>
+      <p>
+        Details: <a [routerLink]="'/datastream/' + datastream['@iot.id']"> View </a>
+      </p>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Feature Of Interest">
+    <mat-card *ngIf="featureOfInterest">
+      <p> ID: {{ featureOfInterest['@iot.id'] }} </p>
+      <p> Description: {{ featureOfInterest.description }} </p>
+      <p> Feature: {{ featureOfInterest.feature | json }} </p>
+      <p>
+        Details: <a [routerLink]="'/feature-of-interest/' + featureOfInterest['@iot.id']"> View </a>
+      </p>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>

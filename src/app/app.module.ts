@@ -12,6 +12,10 @@ import { LocationComponent, LocationDetailComponent } from './location/location.
 import { HistoricalLocationComponent, HistoricalLocationDetailComponent } from './historical_locations/component';
 import { ThingComponent, ThingDetailComponent } from './thing/thing.component';
 import { SensorComponent, SensorDetailComponent } from './sensor/sensor.component';
+import { DatastreamComponent, DatastreamDetailComponent } from './datastream/component';
+import { ObservationComponent, ObservationDetailComponent } from './observation/component';
+import { ObservedPropertyComponent, ObservedPropertyDetailComponent } from './observed-property/component';
+import { FeatureOfInterestComponent, FeatureOfInterestDetailComponent } from './feature-of-interest/component';
 import { LocationService } from './location/location.service';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { HomeComponent } from './home.component';
@@ -32,17 +36,25 @@ import {
 
 @NgModule({
   declarations: [
-      AppComponent,
-      LocationComponent,
-      LocationDetailComponent,
-      HistoricalLocationComponent,
-      HistoricalLocationDetailComponent,
-      ThingComponent,
-      ThingDetailComponent,
-      ToolbarComponent,
-      HomeComponent,
-      SensorComponent,
-      SensorDetailComponent,
+    AppComponent,
+    LocationComponent,
+    LocationDetailComponent,
+    HistoricalLocationComponent,
+    HistoricalLocationDetailComponent,
+    ThingComponent,
+    ThingDetailComponent,
+    ToolbarComponent,
+    HomeComponent,
+    SensorComponent,
+    SensorDetailComponent,
+    DatastreamComponent,
+    DatastreamDetailComponent,
+    ObservationComponent,
+    ObservationDetailComponent,
+    FeatureOfInterestComponent,
+    FeatureOfInterestDetailComponent,
+    ObservedPropertyComponent,
+    ObservedPropertyDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,6 +69,14 @@ import {
         { path: 'thing/:id', component: ThingDetailComponent },
         { path: 'sensors', component: SensorComponent },
         { path: 'sensor/:id', component: SensorDetailComponent },
+        { path: 'datastreams', component: DatastreamComponent },
+        { path: 'datastream/:id', component: DatastreamDetailComponent },
+        { path: 'observations', component: ObservationComponent },
+        { path: 'observation/:id', component: ObservationDetailComponent },
+        { path: 'features-of-interest', component: FeatureOfInterestComponent },
+        { path: 'feature-of-interest/:id', component: FeatureOfInterestDetailComponent },
+        { path: 'observed-properties', component: ObservedPropertyComponent },
+        { path: 'observed-property/:id', component: ObservedPropertyDetailComponent },
       ]),
       HttpClientModule,
       MatButtonModule,

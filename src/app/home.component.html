@@ -1,26 +1,32 @@
+<style>
+ .mat-card {
+   min-width: 90%;
+ }
+</style>
+
 <app-toolbar></app-toolbar>
 
-<mat-grid-list cols="3" rowHeight="100px">
+<mat-grid-list cols="3" rowHeight="100px" gutterSize="25">
   <a routerLink="/locations">
     <mat-grid-tile>
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title> {{ locations }}</mat-card-title>
-        <mat-card-subtitle> Locations </mat-card-subtitle>
-      </mat-card-header>
-    </mat-card>
-  </mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title> {{ locations }}</mat-card-title>
+          <mat-card-subtitle> Locations </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
   </a>
 
   <a routerLink="/historical-locations">
-  <mat-grid-tile>
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title> {{ historicalLocations }}</mat-card-title>
-        <mat-card-subtitle> Historical Locations </mat-card-subtitle>
-      </mat-card-header>
-    </mat-card>
-  </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title> {{ historicalLocations }}</mat-card-title>
+          <mat-card-subtitle> Historical Locations </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
   </a>
   
   <mat-grid-tile>
@@ -31,7 +37,7 @@
       </mat-card-header>
     </mat-card>
   </mat-grid-tile>
-  
+
   <mat-grid-tile>
     <mat-card>
       <mat-card-header>
@@ -40,4 +46,48 @@
       </mat-card-header>
     </mat-card>
   </mat-grid-tile>
+
+  <a routerLink="/datastreams">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title> {{ datastreams }}</mat-card-title>
+          <mat-card-subtitle> Datastreams </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+  </a>
+
+  <a routerLink="/observations">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title> {{ observations }}</mat-card-title>
+          <mat-card-subtitle> Observations </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+  </a>
+
+  <a routerLink="/features-of-interest">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title> {{ featuresOfInterest }}</mat-card-title>
+          <mat-card-subtitle> Features of Interest </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+  </a>
+
+  <a routerLink="/observed-properties">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title> {{ observedProperties }}</mat-card-title>
+          <mat-card-subtitle> Observed Properties </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+  </a>
 </mat-grid-list>

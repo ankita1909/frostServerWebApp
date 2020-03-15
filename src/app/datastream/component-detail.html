@@ -1,0 +1,47 @@
+<app-toolbar></app-toolbar>
+<mat-tab-group>
+  <mat-tab label="Properties">
+    <mat-card>
+      <p> ID: {{ datastream.id }} </p>
+      <p> Name: {{ datastream.name }} </p>
+      <p> Description: {{ datastream.description }} </p>
+      <p> Observation Type: {{ datastream.observationType }} </p>
+      <p> Unit of Measurement: {{ datastream.unitOfMeasurement.name }} </p>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Thing">
+    <mat-card *ngIf="thing">
+      <p> Name: {{ thing.name }} </p>
+      <p> Description: {{ thing.description }} </p>
+      <p>
+        Details: <a [routerLink]="'/thing/' + thing['@iot.id']"> View </a>
+      </p>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Sensor">
+    <mat-card *ngIf="sensor">
+      <p> Name: {{ sensor.name }} </p>
+      <p> Description: {{ sensor.description }} </p>
+      <p>
+        Details: <a [routerLink]="'/sensor/' + sensor['@iot.id']"> View </a>
+      </p>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Observed Property">
+    <mat-card *ngIf="observedProperty">
+      <p> Name: {{ observedProperty.name }} </p>
+      <p> Description: {{ observedProperty.description }} </p>
+      <p> Definition: {{ observedProperty.definition }} </p>
+      <p>
+        Details: <a [routerLink]="'/observed-property/' + observedProperty['@iot.id']"> View </a>
+      </p>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Observations">
+    <app-observation *ngIf="datastream.observationsURL" [listURL]="datastream.observationsURL"></app-observation>
+  </mat-tab>
+</mat-tab-group>
