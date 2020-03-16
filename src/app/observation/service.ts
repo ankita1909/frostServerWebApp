@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class ObservationService {
   listURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/Observations?$count=true";
   detailURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/Observations";
+  postURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/Observations";
   list;
   detail;
 
@@ -20,5 +21,13 @@ export class ObservationService {
   getDetail(id?, url?) {
     this.detail = this.http.get(url || this.detailURL + "(" + id + ")");
     return this.detail;
+  }
+
+  create(f) {
+    return this.http.post(this.postURL, f)
+  }
+
+  edit(f) {
+    return this.http.patch(this.postURL+"("+f.id+")", f)
   }
 }

@@ -8,39 +8,46 @@
 
 <!-- some other component is calling this. Do not render some parts, like toolbar, in this case -->
 <app-toolbar *ngIf="!listURL"></app-toolbar>
-<table mat-table *ngIf="observations.observations && observations.observations.length > 0" [dataSource]="observations.observations" class="mat-elevation-z8">
-
-  <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef> ID </th>
-    <td mat-cell *matCellDef="let observation"> {{observation['@iot.id']}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="details">
-    <th mat-header-cell *matHeaderCellDef> Details </th>
-    <td mat-cell *matCellDef="let observation">
-      <a [routerLink]="'/observation/' + observation['@iot.id']">
-        View
-      </a>
-    </td>
-  </ng-container>
-
-  <ng-container matColumnDef="phenomenonTime">
-    <th mat-header-cell *matHeaderCellDef> Phenomenon Time </th>
-    <td mat-cell *matCellDef="let observation"> {{observation.phenomenonTime}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="result">
-    <th mat-header-cell *matHeaderCellDef> Result </th>
-    <td mat-cell *matCellDef="let observation"> {{observation.result}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="resultTime">
-    <th mat-header-cell *matHeaderCellDef> Result Time </th>
-    <td mat-cell *matCellDef="let observation"> {{observation.resultTime}} </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
-
-<div *ngIf="!observations.observations || observations.observations.length === 0"> No observations found! </div>
+<mat-tab-group>
+  <mat-tab label="Observations">
+    <table mat-table *ngIf="observations.observations && observations.observations.length > 0" [dataSource]="observations.observations" class="mat-elevation-z8">
+    
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let observation"> {{observation['@iot.id']}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="details">
+        <th mat-header-cell *matHeaderCellDef> Details </th>
+        <td mat-cell *matCellDef="let observation">
+          <a [routerLink]="'/observation/' + observation['@iot.id']">
+            View
+          </a>
+        </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="phenomenonTime">
+        <th mat-header-cell *matHeaderCellDef> Phenomenon Time </th>
+        <td mat-cell *matCellDef="let observation"> {{observation.phenomenonTime}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="result">
+        <th mat-header-cell *matHeaderCellDef> Result </th>
+        <td mat-cell *matCellDef="let observation"> {{observation.result}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="resultTime">
+        <th mat-header-cell *matHeaderCellDef> Result Time </th>
+        <td mat-cell *matCellDef="let observation"> {{observation.resultTime}} </td>
+      </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    
+    <div *ngIf="!observations.observations || observations.observations.length === 0"> No observations found! </div>
+  </mat-tab>
+  <mat-tab label="Create">
+    <create-observation></create-observation>
+  </mat-tab>
+</mat-tab-group>

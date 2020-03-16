@@ -1,0 +1,31 @@
+<style>
+  .form {
+    margin-left: 30px;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .form .mat-form-field {
+    width: 100%;
+  }
+</style>
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate class="form">
+  <br>
+  <mat-form-field>
+    <mat-label>Phenomenon Time</mat-label>
+    <input name="phenomenonTime" matInput ngModel [value]="phenomenonTime" required>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Result</mat-label>
+    <textarea name="result" matInput [value]="result" required ngModel></textarea>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Result Time</mat-label>
+    <input type="text" name="resultTime" matInput [value]="resultTime" ngModel>
+  </mat-form-field>
+  <br>
+  <button mat-raised-button color="primary">Submit</button>
+</form>

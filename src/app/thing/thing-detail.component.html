@@ -6,4 +6,12 @@
       <p> Description: {{ thing.description }} </p>
     </mat-card>
   </mat-tab>
+  <mat-tab label="Edit">
+    <edit-thing
+      [id]="thing.id"
+      [name]="thing.name"
+      [description]="thing.description"
+      [properties]="thing.properties"
+    ></edit-thing>
+  </mat-tab>
 </mat-tab-group>

@@ -8,44 +8,51 @@
 
 <!-- some other component is calling this. Do not render some parts, like toolbar, in this case -->
 <app-toolbar *ngIf="!listURL"></app-toolbar>
-<table mat-table *ngIf="featuresOfInterest.featuresOfInterest && featuresOfInterest.featuresOfInterest.length > 0" [dataSource]="featuresOfInterest.featuresOfInterest" class="mat-elevation-z8">
-
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let featureOfInterest"> {{featureOfInterest.name}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef> ID </th>
-    <td mat-cell *matCellDef="let featureOfInterest"> {{featureOfInterest['@iot.id']}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="details">
-    <th mat-header-cell *matHeaderCellDef> Details </th>
-    <td mat-cell *matCellDef="let featureOfInterest">
-      <a [routerLink]="'/feature-of-interest/' + featureOfInterest['@iot.id']">
-        View
-      </a>
-    </td>
-  </ng-container>
-
-  <ng-container matColumnDef="description">
-    <th mat-header-cell *matHeaderCellDef> Description </th>
-    <td mat-cell *matCellDef="let featureOfInterest"> {{featureOfInterest.description}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="encodingType">
-    <th mat-header-cell *matHeaderCellDef> Encoding Type </th>
-    <td mat-cell *matCellDef="let featureOfInterest"> {{featureOfInterest.encodingType}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="feature">
-    <th mat-header-cell *matHeaderCellDef> Feature </th>
-    <td mat-cell *matCellDef="let featureOfInterest"> {{featureOfInterest.feature|json}} </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
-
-<div *ngIf="!featuresOfInterest.featuresOfInterest || featuresOfInterest.featuresOfInterest.length === 0"> No features of interest found! </div>
+<mat-tab-group>
+  <mat-tab label="Features of Interest">
+    <table mat-table *ngIf="featuresOfInterest.featuresOfInterest && featuresOfInterest.featuresOfInterest.length > 0" [dataSource]="featuresOfInterest.featuresOfInterest" class="mat-elevation-z8">
+    
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let featureOfInterest"> {{featureOfInterest.name}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let featureOfInterest"> {{featureOfInterest['@iot.id']}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="details">
+        <th mat-header-cell *matHeaderCellDef> Details </th>
+        <td mat-cell *matCellDef="let featureOfInterest">
+          <a [routerLink]="'/feature-of-interest/' + featureOfInterest['@iot.id']">
+            View
+          </a>
+        </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef> Description </th>
+        <td mat-cell *matCellDef="let featureOfInterest"> {{featureOfInterest.description}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="encodingType">
+        <th mat-header-cell *matHeaderCellDef> Encoding Type </th>
+        <td mat-cell *matCellDef="let featureOfInterest"> {{featureOfInterest.encodingType}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="feature">
+        <th mat-header-cell *matHeaderCellDef> Feature </th>
+        <td mat-cell *matCellDef="let featureOfInterest"> {{featureOfInterest.feature|json}} </td>
+      </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    
+    <div *ngIf="!featuresOfInterest.featuresOfInterest || featuresOfInterest.featuresOfInterest.length === 0"> No features of interest found! </div>
+  </mat-tab>
+  <mat-tab label="Create">
+    <create-feature-of-interest></create-feature-of-interest>
+  </mat-tab>
+</mat-tab-group>

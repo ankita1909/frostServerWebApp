@@ -7,34 +7,41 @@
 </style>
 
 <app-toolbar></app-toolbar>
-<table mat-table *ngIf="sensors.sensors.length > 0" [dataSource]="sensors.sensors" class="mat-elevation-z8">
-
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let sensor"> {{sensor.name}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="details">
-    <th mat-header-cell *matHeaderCellDef> Details </th>
-    <td mat-cell *matCellDef="let sensor">
-      <a [routerLink]="'/sensor/' + sensor['@iot.id']">
-        View
-      </a>
-    </td>
-  </ng-container>
-
-  <ng-container matColumnDef="description">
-    <th mat-header-cell *matHeaderCellDef> Description </th>
-    <td mat-cell *matCellDef="let sensor"> {{sensor.description}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="metadata">
-    <th mat-header-cell *matHeaderCellDef> Metadata </th>
-    <td mat-cell *matCellDef="let sensor"> {{sensor.metadata}} </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
-
-<div *ngIf="sensors.sensors.length === 0"> No records found </div>
+<mat-tab-group>
+  <mat-tab label="Sensors">
+    <table mat-table *ngIf="sensors.sensors.length > 0" [dataSource]="sensors.sensors" class="mat-elevation-z8">
+    
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let sensor"> {{sensor.name}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="details">
+        <th mat-header-cell *matHeaderCellDef> Details </th>
+        <td mat-cell *matCellDef="let sensor">
+          <a [routerLink]="'/sensor/' + sensor['@iot.id']">
+            View
+          </a>
+        </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef> Description </th>
+        <td mat-cell *matCellDef="let sensor"> {{sensor.description}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="metadata">
+        <th mat-header-cell *matHeaderCellDef> Metadata </th>
+        <td mat-cell *matCellDef="let sensor"> {{sensor.metadata}} </td>
+      </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    
+    <div *ngIf="sensors.sensors.length === 0"> No records found </div>
+  </mat-tab>
+  <mat-tab label="Create">
+    <create-sensor></create-sensor>
+  </mat-tab>
+</mat-tab-group>

@@ -11,4 +11,12 @@
   <mat-tab label="Datastreams">
     <app-datastream *ngIf="observedProperty.datastreamsURL" [listURL]="observedProperty.datastreamsURL"></app-datastream>
   </mat-tab>
+  <mat-tab label="Edit">
+    <edit-observed-property
+      [id]="observedProperty.id"
+      [name]="observedProperty.name"
+      [description]="observedProperty.description"
+      [definition]="observedProperty.definition"
+    ></edit-observed-property>
+  </mat-tab>
 </mat-tab-group>

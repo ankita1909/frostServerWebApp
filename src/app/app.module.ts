@@ -13,11 +13,17 @@ import { LocationComponent, LocationDetailComponent } from './location/location.
 import { LocationFormComponent, LocationEditComponent } from './location/form';
 import { HistoricalLocationComponent, HistoricalLocationDetailComponent } from './historical_locations/component';
 import { ThingComponent, ThingDetailComponent } from './thing/thing.component';
+import { ThingCreateComponent, ThingEditComponent } from './thing/form';
 import { SensorComponent, SensorDetailComponent } from './sensor/sensor.component';
+import { SensorCreateComponent, SensorEditComponent } from './sensor/form';
 import { DatastreamComponent, DatastreamDetailComponent } from './datastream/component';
+import { DatastreamCreateComponent, DatastreamEditComponent } from './datastream/form';
 import { ObservationComponent, ObservationDetailComponent } from './observation/component';
+import { ObservationCreateComponent, ObservationEditComponent } from './observation/form';
 import { ObservedPropertyComponent, ObservedPropertyDetailComponent } from './observed-property/component';
+import { ObservedPropertyCreateComponent, ObservedPropertyEditComponent } from './observed-property/form';
 import { FeatureOfInterestComponent, FeatureOfInterestDetailComponent } from './feature-of-interest/component';
+import { FeatureOfInterestCreateComponent, FeatureOfInterestEditComponent } from './feature-of-interest/form';
 import { LocationService } from './location/location.service';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { HomeComponent } from './home.component';
@@ -49,18 +55,30 @@ import {
     HistoricalLocationDetailComponent,
     ThingComponent,
     ThingDetailComponent,
+    ThingCreateComponent,
+    ThingEditComponent,
     ToolbarComponent,
     HomeComponent,
     SensorComponent,
     SensorDetailComponent,
+    SensorCreateComponent,
+    SensorEditComponent,
     DatastreamComponent,
     DatastreamDetailComponent,
+    DatastreamCreateComponent,
+    DatastreamEditComponent,
     ObservationComponent,
     ObservationDetailComponent,
+    ObservationCreateComponent,
+    ObservationEditComponent,
     FeatureOfInterestComponent,
     FeatureOfInterestDetailComponent,
+    FeatureOfInterestCreateComponent,
+    FeatureOfInterestEditComponent,
     ObservedPropertyComponent,
     ObservedPropertyDetailComponent,
+    ObservedPropertyCreateComponent,
+    ObservedPropertyEditComponent,
   ],
   imports: [
     BrowserModule,

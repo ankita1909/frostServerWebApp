@@ -8,29 +8,36 @@
 
 <!-- some other component is calling this. Do not render some parts, like toolbar, in this case -->
 <app-toolbar *ngIf="!listURL"></app-toolbar>
-<table mat-table *ngIf="things.things && things.things.length > 0" [dataSource]="things.things" class="mat-elevation-z8">
-
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let thing"> {{thing.name}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="things">
-    <th mat-header-cell *matHeaderCellDef> Details </th>
-    <td mat-cell *matCellDef="let thing">
-      <a [routerLink]="'/thing/' + thing['@iot.id']">
-        View
-      </a>
-    </td>
-  </ng-container>
-
-  <ng-container matColumnDef="description">
-    <th mat-header-cell *matHeaderCellDef> Description </th>
-    <td mat-cell *matCellDef="let thing"> {{thing.description}} </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
-
-<div *ngIf="!things.things || things.things.length === 0"> No things found! </div>
+<mat-tab-group>
+  <mat-tab label="Things">
+    <table mat-table *ngIf="things.things && things.things.length > 0" [dataSource]="things.things" class="mat-elevation-z8">
+    
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let thing"> {{thing.name}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="things">
+        <th mat-header-cell *matHeaderCellDef> Details </th>
+        <td mat-cell *matCellDef="let thing">
+          <a [routerLink]="'/thing/' + thing['@iot.id']">
+            View
+          </a>
+        </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef> Description </th>
+        <td mat-cell *matCellDef="let thing"> {{thing.description}} </td>
+      </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    
+    <div *ngIf="!things.things || things.things.length === 0"> No things found! </div>
+  </mat-tab>
+  <mat-tab label="Create">
+    <create-thing></create-thing>
+  </mat-tab>
+</mat-tab-group>

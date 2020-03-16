@@ -6,7 +6,7 @@
       <p> Name: {{ datastream.name }} </p>
       <p> Description: {{ datastream.description }} </p>
       <p> Observation Type: {{ datastream.observationType }} </p>
-      <p> Unit of Measurement: {{ datastream.unitOfMeasurement.name }} </p>
+      <p> Unit of Measurement: {{ datastream.unitOfMeasurement | json }} </p>
     </mat-card>
   </mat-tab>
 
@@ -43,5 +43,14 @@
 
   <mat-tab label="Observations">
     <app-observation *ngIf="datastream.observationsURL" [listURL]="datastream.observationsURL"></app-observation>
+  </mat-tab>
+  <mat-tab label="Edit">
+    <edit-datastream
+      [id]="datastream.id"
+      [name]="datastream.name"
+      [description]="datastream.description"
+      [unitOfMeasurement]="datastream.unitOfMeasurement"
+      [observationType]="datastream.observationType"
+    ></edit-datastream>
   </mat-tab>
 </mat-tab-group>

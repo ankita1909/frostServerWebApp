@@ -1,0 +1,36 @@
+<style>
+  .datastream-form {
+    margin-left: 30px;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .datastream-form .mat-form-field {
+    width: 100%;
+  }
+</style>
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate class="datastream-form">
+  <br>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input name="name" matInput ngModel [value]="name" required>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <textarea name="description" matInput [value]="description" required ngModel></textarea>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Observation Type</mat-label>
+    <textarea name="observationType" matInput [value]="observationType" required ngModel></textarea>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Unit of Measurement</mat-label>
+    <textarea name="unitOfMeasurement" matInput [value]="unitOfMeasurement" required ngModel></textarea>
+  </mat-form-field>
+  <br>
+  <button mat-raised-button color="primary">Submit</button>
+</form>

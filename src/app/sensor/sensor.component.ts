@@ -53,6 +53,7 @@ export class SensorDetailComponent implements OnInit {
               name: data['name'],
               description: data['description'],
               metadata: data['metadata'],
+              encodingType: data['encodingType'],
         });
   }
 

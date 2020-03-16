@@ -30,4 +30,12 @@
       </p>
     </mat-card>
   </mat-tab>
+  <mat-tab label="Edit">
+    <edit-observation
+      [id]="observation.id"
+      [phenomenonTime]="observation.phenomenonTime"
+      [result]="observation.result"
+      [resultTime]="observation.resultTime"
+    ></edit-observation>
+  </mat-tab>
 </mat-tab-group>

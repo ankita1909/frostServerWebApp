@@ -28,24 +28,28 @@
       </mat-card>
     </mat-grid-tile>
   </a>
-  
-  <mat-grid-tile>
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title> {{ things }}</mat-card-title>
-        <mat-card-subtitle> Things </mat-card-subtitle>
-      </mat-card-header>
-    </mat-card>
-  </mat-grid-tile>
 
-  <mat-grid-tile>
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title> {{ sensors }}</mat-card-title>
-        <mat-card-subtitle> Sensors </mat-card-subtitle>
-      </mat-card-header>
-    </mat-card>
-  </mat-grid-tile>
+  <a routerLink="/things">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title> {{ things }}</mat-card-title>
+          <mat-card-subtitle> Things </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+  </a>
+
+  <a routerLink="/sensors">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title> {{ sensors }}</mat-card-title>
+          <mat-card-subtitle> Sensors </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+  </a>
 
   <a routerLink="/datastreams">
     <mat-grid-tile>

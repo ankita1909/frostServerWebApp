@@ -7,6 +7,10 @@ import { LocationService } from './location.service';
   templateUrl: './form.html',
 })
 export class LocationFormComponent {
+    name="";
+    description="";
+    encodingType="";
+    location={};
   constructor(
     private locationService: LocationService,
   ) { }
@@ -65,7 +69,7 @@ export class LocationEditComponent {
     f.value.location = JSON.parse(f.value.location)
     this.locationService.edit(f.value).subscribe(
       data => {
-          alert("Created location successfully.")
+          alert("Updated location successfully.")
           window.location.href="/location/"+f.value.id
       },
       err => console.log(err),
