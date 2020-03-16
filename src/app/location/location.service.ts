@@ -13,6 +13,7 @@ export interface Location {
 export class LocationService {
   listURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/Locations?$count=true";
   detailURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/Locations";
+  postURL = "http://iot.gis.bgu.tum.de:8080/FROST-Server/v1.0/Locations";
   locations;
   location;
 
@@ -26,5 +27,13 @@ export class LocationService {
   getLocationDetail(id) {
     this.location = this.http.get(this.detailURL + "(" + id + ")");
     return this.location;
+  }
+
+  create(f) {
+    return this.http.post(this.postURL, f)
+  }
+
+  edit(f) {
+    return this.http.patch(this.postURL+"("+f.id+")", f)
   }
 }

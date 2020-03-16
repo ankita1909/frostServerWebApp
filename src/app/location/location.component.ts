@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LocationService, Location } from './location.service';
+import { LocationFormComponent } from './form';
 import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { switchMap } from 'rxjs/operators';
 
@@ -56,6 +57,8 @@ export class LocationDetailComponent implements OnInit {
               description: data['description'],
               location: data['location'],
               thingsURL: data['Things@iot.navigationLink'],
+              encodingType: data['encodingType'],
+              id: data['@iot.id'],
         });
   }
 

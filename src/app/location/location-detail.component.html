@@ -11,4 +11,13 @@
   <mat-tab label="Things">
     <app-thing *ngIf="location.thingsURL" [listURL]="location.thingsURL"></app-thing>
   </mat-tab>
+  <mat-tab label="Edit">
+    <edit-location
+      [id]="location.id"
+      [name]="location.name"
+      [description]="location.description"
+      [location]="location.location"
+      [encodingType]="location.encodingType"
+    ></edit-location>
+  </mat-tab>
 </mat-tab-group>

@@ -8,7 +8,7 @@
 
 <!-- some other component is calling this. Do not render some parts, like toolbar, in this case -->
 <app-toolbar *ngIf="!listURL"></app-toolbar>
-<table mat-table *ngIf="things.things.length > 0" [dataSource]="things.things" class="mat-elevation-z8">
+<table mat-table *ngIf="things.things && things.things.length > 0" [dataSource]="things.things" class="mat-elevation-z8">
 
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef> Name </th>
@@ -33,4 +33,4 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
-<div *ngIf="things.things.length === 0"> No things found! </div>
+<div *ngIf="!things.things || things.things.length === 0"> No things found! </div>
