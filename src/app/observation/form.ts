@@ -18,7 +18,7 @@ export class ObservationCreateComponent {
   onSubmit(f: NgForm) {
     if (f.valid) {
       this.observationService.create(f.value).subscribe(
-        data => window.location.href="/observations",
+        data => window.location.href="/#/observations",
         err => console.log(err),
       )
     }

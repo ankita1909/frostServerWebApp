@@ -102,7 +102,7 @@ import {
       { path: 'feature-of-interest/:id', component: FeatureOfInterestDetailComponent },
       { path: 'observed-properties', component: ObservedPropertyComponent },
       { path: 'observed-property/:id', component: ObservedPropertyDetailComponent },
-    ]),
+    ], { useHash: true}),
     HttpClientModule,
     FormsModule,
     MatButtonModule,

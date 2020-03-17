@@ -30,4 +30,8 @@ export class DatastreamService {
   edit(f) {
     return this.http.patch(this.postURL+"("+f.id+")", f)
   }
+
+  remove(id) {
+    return this.http.delete(this.postURL+"("+id+")")
+  }
 }

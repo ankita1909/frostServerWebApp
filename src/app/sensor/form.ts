@@ -19,7 +19,7 @@ export class SensorCreateComponent {
   onSubmit(f: NgForm) {
     if (f.valid) {
       this.sensorService.create(f.value).subscribe(
-        data => window.location.href="/sensors",
+        data => window.location.href="/#/sensors",
         err => console.log(err),
       )
     }

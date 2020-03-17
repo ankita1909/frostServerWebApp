@@ -20,7 +20,7 @@ export class LocationFormComponent {
       if (!f.value.id) {
         f.value.location = JSON.parse(f.value.location)
         this.locationService.create(f.value).subscribe(
-          data => window.location.href="/locations",
+          data => window.location.href="/#/locations",
           err => console.log(err),
         )
       }

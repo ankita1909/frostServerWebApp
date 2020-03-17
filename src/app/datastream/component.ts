@@ -17,7 +17,7 @@ export class DatastreamComponent implements OnInit {
   datastreams;
   @Input()
   listURL = "";
-  displayedColumns: string[] = ['name', 'description', 'observationType', 'unitOfMeasurement', 'details',];
+  displayedColumns: string[] = ['name', 'description', 'observationType', 'unitOfMeasurement', 'details', 'action',];
 
   constructor(
     private datastreamService: DatastreamService,
@@ -30,6 +30,16 @@ export class DatastreamComponent implements OnInit {
         count:  data['@iot.count'],
         next: data['@iot.nextLink']
     });
+  }
+
+  remove(id) {
+    this.datastreamService.remove(id).subscribe(
+      data => {
+        console.log("Deleted")
+        window.location.href="/#/datastreams"
+      },
+      err => console.log(err)
+    );
   }
 
   ngOnInit() {

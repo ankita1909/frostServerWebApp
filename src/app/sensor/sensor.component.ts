@@ -177,7 +177,7 @@ export class SensorConnectComponent implements OnInit {
     this.datastreamService.create(payload).subscribe(
         data => {
           alert("Created new datastream")
-          window.location.href="/datastreams"
+          window.location.href="/#/datastreams"
         },
         err => console.log(err),
       )

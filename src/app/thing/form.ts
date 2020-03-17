@@ -20,7 +20,7 @@ export class ThingCreateComponent {
       if (!f.value.id) {
         f.value.properties = JSON.parse(f.value.properties)
         this.thingService.create(f.value).subscribe(
-          data => window.location.href="/things",
+          data => window.location.href="/#/things",
           err => console.log(err),
         )
       }
@@ -66,7 +66,7 @@ export class ThingEditComponent {
     this.thingService.edit(f.value).subscribe(
       data => {
           alert("Updated thing successfully.")
-          window.location.href="/location/"+f.value.id
+          window.location.href="/#/location/"+f.value.id
       },
       err => console.log(err),
     )

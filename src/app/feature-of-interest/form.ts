@@ -22,7 +22,7 @@ export class FeatureOfInterestCreateComponent {
       if (!f.value.id) {
         f.value.feature = JSON.parse(f.value.feature)
         this.featureOfInterestService.create(f.value).subscribe(
-          data => window.location.href="/features-of-interest",
+          data => window.location.href="/#/features-of-interest",
           err => console.log(err),
         )
       }

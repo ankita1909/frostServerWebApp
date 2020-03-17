@@ -32,7 +32,7 @@ export class DatastreamCreateComponent {
 
         f.value.unitOfMeasurement = JSON.parse(f.value.unitOfMeasurement)
         this.datastreamService.create(f.value).subscribe(
-          data => window.location.href="/datastreams",
+          data => window.location.href="/#/datastreams",
           err => console.log(err),
         )
       }

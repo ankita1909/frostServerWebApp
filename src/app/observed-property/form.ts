@@ -18,7 +18,7 @@ export class ObservedPropertyCreateComponent {
   onSubmit(f: NgForm) {
     if (f.valid) {
       this.observedPropertyService.create(f.value).subscribe(
-        data => window.location.href="/observed-properties",
+        data => window.location.href="/#/observed-properties",
         err => console.log(err),
       )
     }
