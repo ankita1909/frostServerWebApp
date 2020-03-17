@@ -14,4 +14,7 @@
       [properties]="thing.properties"
     ></edit-thing>
   </mat-tab>
+  <mat-tab label="Connect a sensor">
+    <sensor-connect [thingID]="thing.id"></sensor-connect>
+  </mat-tab>
 </mat-tab-group>

@@ -14,7 +14,7 @@ import { LocationFormComponent, LocationEditComponent } from './location/form';
 import { HistoricalLocationComponent, HistoricalLocationDetailComponent } from './historical_locations/component';
 import { ThingComponent, ThingDetailComponent } from './thing/thing.component';
 import { ThingCreateComponent, ThingEditComponent } from './thing/form';
-import { SensorComponent, SensorDetailComponent } from './sensor/sensor.component';
+import { SensorComponent, SensorDetailComponent, SensorConnectComponent } from './sensor/sensor.component';
 import { SensorCreateComponent, SensorEditComponent } from './sensor/form';
 import { DatastreamComponent, DatastreamDetailComponent } from './datastream/component';
 import { DatastreamCreateComponent, DatastreamEditComponent } from './datastream/form';
@@ -63,6 +63,7 @@ import {
     SensorDetailComponent,
     SensorCreateComponent,
     SensorEditComponent,
+    SensorConnectComponent,
     DatastreamComponent,
     DatastreamDetailComponent,
     DatastreamCreateComponent,

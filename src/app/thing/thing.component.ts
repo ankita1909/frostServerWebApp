@@ -55,6 +55,7 @@ export class ThingDetailComponent implements OnInit {
               name: data['name'],
               description: data['description'],
               metadata: data['metadata'],
+              id: data['@iot.id'],
         });
   }
 

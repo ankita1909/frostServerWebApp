@@ -1,0 +1,73 @@
+<style>
+  .connect-form {
+    margin-left: 30px;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .connect-form .mat-form-field {
+    width: 100%;
+  }
+</style>
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate class="connect-form">
+  <mat-form-field>
+    <mat-label>
+      Choose a sensor
+    </mat-label>
+    <mat-select required name="sensorID" ngModel>
+      <mat-option *ngFor="let sensor of sensors.sensors" [value]="sensor['@iot.id']">
+        {{ sensor.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>
+      Choose an observed property
+    </mat-label>
+    <mat-select required name="observedPropertyID" ngModel>
+      <mat-option *ngFor="let prop of observedProperties.observedProperties" [value]="prop['@iot.id']">
+        {{ prop.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>
+      Choose the unit of measurement
+    </mat-label>
+    <mat-select required (ngModelChange)="checkUnitValue($event)" name="unitOfMeasurement" ngModel [disabled]="!chooseAmongOptions">
+      <mat-option *ngFor="let unit of unitsOfMeasurement" [value]="unit['value']">
+        {{ unit.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field *ngIf="!chooseAmongOptions">
+    <mat-label>
+      Enter the unit of measurement JSON
+    </mat-label>
+    <textarea required matInput name="unitOfMeasurementStr" ngModel></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>
+      Enter name
+    </mat-label>
+    <input type="text" matInput required [value]="datastreamName" name="datastreamName" ngModel>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>
+      Enter description
+    </mat-label>
+    <textarea required matInput [value]="datastreamDescription" name="datastreamDescription" ngModel></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>
+      Select observation type
+    </mat-label>
+    <mat-select required name="observationType" ngModel>
+      <mat-option *ngFor="let obType of observationTypes" [value]="obType['value']">
+        {{ obType.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-raised-button color="primary">Connect</button>
+</form>
