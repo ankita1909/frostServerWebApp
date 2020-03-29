@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { LocationService } from './location.service';
 
+/* Form to create a new location */
 @Component({
   selector: 'form-location',
   templateUrl: './form.html',
@@ -29,6 +30,7 @@ export class LocationFormComponent {
 }
 
 
+/* Form to edit a given location */
 @Component({
   selector: 'edit-location',
   templateUrl: './form.html',

@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { SensorService } from './sensor.service';
 
+/* Form to create a new sensor */
 @Component({
   selector: 'create-sensor',
   templateUrl: './form.html',
@@ -27,6 +28,7 @@ export class SensorCreateComponent {
 }
 
 
+/* Form to edit a given sensor */
 @Component({
   selector: 'edit-sensor',
   templateUrl: './form.html',

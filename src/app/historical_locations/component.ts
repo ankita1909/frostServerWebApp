@@ -6,6 +6,7 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { LocationComponent } from '../location/location.component';
 import { switchMap, finalize } from 'rxjs/operators';
 
+/* Display the list of datastreams available. */
 @Component({
   selector: 'app-historical-location',
   templateUrl: './component-list.html'
@@ -20,6 +21,7 @@ export class HistoricalLocationComponent implements OnInit {
     private historicalLocationService: HistoricalLocationService
   ) { }
 
+  /* Get list of historical locations */
   getHistoricalLocations() {
     this.locations = this.historicalLocationService.getLocationsList()
       .subscribe(data => this.locations = {
@@ -34,6 +36,7 @@ export class HistoricalLocationComponent implements OnInit {
   }
 }
 
+/* Display a single historical location in detail. */
 @Component({
   selector: 'app-historical-location-detail',
   templateUrl: './component-detail.html'

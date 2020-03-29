@@ -5,6 +5,14 @@ import { LocationFormComponent } from './form';
 import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { switchMap } from 'rxjs/operators';
 
+/* Display the list of locations available.
+ * An input property `listURL` is defined on this component, that allows
+ * a user of this component to specify the URL from which the list
+ * of datastreams will be fetched to populate the table.
+ *
+ * If the `listURL` is empty, the component assumes that all locations
+ * are to be listed.
+ * */
 @Component({
   selector: 'app-location',
   templateUrl: './location.component.html'
@@ -21,6 +29,7 @@ export class LocationComponent implements OnInit {
     private locationService: LocationService
   ) { }
 
+  /* Get list of locations */
   getLocations() {
     this.locations = this.locationService.getLocationsList(this.listURL)
       .subscribe(data => this.locations = {
@@ -35,6 +44,11 @@ export class LocationComponent implements OnInit {
   }
 }
 
+/* Display a single location in detail.
+ * In form of tabs:
+ *  - properties
+ *  - editing the location
+ */
 @Component({
   selector: 'app-location-detail',
   templateUrl: './location-detail.component.html'
@@ -49,6 +63,7 @@ export class LocationDetailComponent implements OnInit {
     private route: ActivatedRoute,
   ) { }
 
+  /* Get a single location and associated properties */
   getLocation() {
     this.location = this.route.paramMap.pipe(
       switchMap(params => this.locationService.getLocationDetail(params.get('id'))))

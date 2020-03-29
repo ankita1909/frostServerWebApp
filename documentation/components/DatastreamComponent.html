@@ -1,0 +1,786 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frost-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frost-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>DatastreamComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/datastream/component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-datastream</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./component-list.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#datastreams">datastreams</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getDatastreams">getDatastreams</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#remove">remove</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#listURL">listURL</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(datastreamService: <a href="../injectables/DatastreamService.html">DatastreamService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/datastream/component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>datastreamService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DatastreamService.html" target="_self" >DatastreamService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listURL"></a>
+                        <b>listURL</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;&quot;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/datastream/component.ts:27</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDatastreams"></a>
+                    <span class="name">
+                        <b>
+                            getDatastreams
+                        </b>
+                        <a href="#getDatastreams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDatastreams()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/datastream/component.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/datastream/component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="remove"></a>
+                    <span class="name">
+                        <b>
+                            remove
+                        </b>
+                        <a href="#remove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>remove(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/datastream/component.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="datastreams"></a>
+                        <span class="name">
+                            <b>
+                            datastreams</b>
+                            <a href="#datastreams"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/datastream/component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                            displayedColumns</b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;name&#x27;, &#x27;description&#x27;, &#x27;observationType&#x27;, &#x27;unitOfMeasurement&#x27;, &#x27;details&#x27;, &#x27;action&#x27;,]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/datastream/component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                            title</b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;Datastreams&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/datastream/component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input } from &#x27;@angular/core&#x27;;
+import { DatastreamService } from &#x27;./service&#x27;;
+import { ObservedPropertyService } from &#x27;../observed-property/service&#x27;;
+import { SensorService } from &#x27;../sensor/sensor.service&#x27;;
+import { ThingService } from &#x27;../thing/thing.service&#x27;;
+import { ToolbarComponent } from &#x27;../toolbar/toolbar.component&#x27;;
+import { ObservationComponent } from &#x27;../observation/component&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { switchMap } from &#x27;rxjs/operators&#x27;;
+
+/* Display the list of datastreams available.
+ * An input property &#x60;listURL&#x60; is defined on this component, that allows
+ * a user of this component to specify the URL from which the list
+ * of datastreams will be fetched to populate the table.
+ *
+ * If the &#x60;listURL&#x60; is empty, the component assumes that all datastreams
+ * are to be listed.
+ */
+@Component({
+  selector: &#x27;app-datastream&#x27;,
+  templateUrl: &#x27;./component-list.html&#x27;
+})
+export class DatastreamComponent implements OnInit {
+  title &#x3D; &#x27;Datastreams&#x27;;
+  datastreams;
+  @Input()
+  listURL &#x3D; &quot;&quot;;
+  displayedColumns: string[] &#x3D; [&#x27;name&#x27;, &#x27;description&#x27;, &#x27;observationType&#x27;, &#x27;unitOfMeasurement&#x27;, &#x27;details&#x27;, &#x27;action&#x27;,];
+
+  constructor(
+    private datastreamService: DatastreamService,
+  ) { }
+
+  /* Get list of datastreams */
+  getDatastreams() {
+    this.datastreams &#x3D; this.datastreamService.getList(this.listURL)
+      .subscribe(data &#x3D;&gt; this.datastreams &#x3D; {
+        datastreams: data[&#x27;value&#x27;],
+        count:  data[&#x27;@iot.count&#x27;],
+        next: data[&#x27;@iot.nextLink&#x27;]
+    });
+  }
+
+  /* Delete a datastream specified by datastream ID */
+  remove(id) {
+    this.datastreamService.remove(id).subscribe(
+      data &#x3D;&gt; {
+        console.log(&quot;Deleted&quot;)
+        window.location.href&#x3D;&quot;/#/datastreams&quot;
+      },
+      err &#x3D;&gt; console.log(err)
+    );
+  }
+
+  ngOnInit() {
+    this.getDatastreams()
+  }
+}
+
+/* Display a single datastream in detail.
+ * In form of tabs:
+ *  - thing
+ *  - sensor
+ *  - observed property
+ *  - properties of the datastream
+ *  - editing the datastream
+ */
+@Component({
+  selector: &#x27;app-datastream-detail&#x27;,
+  templateUrl: &#x27;./component-detail.html&#x27;
+})
+export class DatastreamDetailComponent implements OnInit {
+  title &#x3D; &#x27;Datastream&#x27;;
+  datastream;
+  sensor;
+  thing;
+  observedProperty;
+
+  constructor(
+    private datastreamService: DatastreamService,
+    private thingService: ThingService,
+    private sensorService: SensorService,
+    private observedPropertyService: ObservedPropertyService,
+    private route: ActivatedRoute,
+  ) { }
+
+  /* Get a single datastream and associated sensor, thing and observed property */
+  getDatastream() {
+    this.datastream &#x3D; this.route.paramMap.pipe(
+      switchMap(params &#x3D;&gt; this.datastreamService.getDetail(params.get(&#x27;id&#x27;))))
+        .subscribe(
+          (data) &#x3D;&gt; {
+            this.datastream &#x3D; {
+              id: data[&#x27;@iot.id&#x27;],
+              name: data[&#x27;name&#x27;],
+              description: data[&#x27;description&#x27;],
+              observationType: data[&#x27;observationType&#x27;],
+              unitOfMeasurement: data[&#x27;unitOfMeasurement&#x27;],
+              sensorURL: data[&#x27;Sensor@iot.navigationLink&#x27;],
+              thingURL: data[&#x27;Thing@iot.navigationLink&#x27;],
+              observedPropertyURL: data[&#x27;ObservedProperty@iot.navigationLink&#x27;],
+              observationsURL: data[&#x27;Observations@iot.navigationLink&#x27;],
+            }
+            this.thing &#x3D; this.thingService.getThingDetail(undefined, this.datastream.thingURL).subscribe(
+              data &#x3D;&gt; this.thing &#x3D; data
+            )
+            this.sensor &#x3D; this.sensorService.getSensorDetail(undefined, this.datastream.sensorURL).subscribe(
+              data &#x3D;&gt; this.sensor &#x3D; data
+            )
+            this.observedProperty &#x3D; this.observedPropertyService.getDetail(undefined, this.datastream.observedPropertyURL).subscribe(
+              data &#x3D;&gt; this.observedProperty &#x3D; data
+            )
+        });
+  }
+
+  ngOnInit() {
+    this.getDatastream()
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;style&gt;
+  table {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 70%;
+  }
+&lt;/style&gt;
+
+&lt;!-- some other component is calling this. Do not render some parts, like toolbar, in this case --&gt;
+&lt;app-toolbar *ngIf&#x3D;&quot;!listURL&quot;&gt;&lt;/app-toolbar&gt;
+&lt;mat-tab-group&gt;
+  &lt;mat-tab label&#x3D;&quot;Datastreams&quot;&gt;
+    &lt;table mat-table *ngIf&#x3D;&quot;datastreams.datastreams &amp;&amp; datastreams.datastreams.length &gt; 0&quot; [dataSource]&#x3D;&quot;datastreams.datastreams&quot; class&#x3D;&quot;mat-elevation-z8&quot;&gt;
+    
+      &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef&gt; Name &lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let datastream&quot;&gt; {{datastream.name}} &lt;/td&gt;
+      &lt;/ng-container&gt;
+    
+      &lt;ng-container matColumnDef&#x3D;&quot;details&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef&gt; Details &lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let datastream&quot;&gt;
+          &lt;a [routerLink]&#x3D;&quot;&#x27;/datastream/&#x27; + datastream[&#x27;@iot.id&#x27;]&quot;&gt;
+            View
+          &lt;/a&gt;
+        &lt;/td&gt;
+      &lt;/ng-container&gt;
+    
+      &lt;ng-container matColumnDef&#x3D;&quot;description&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef&gt; Description &lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let datastream&quot;&gt; {{datastream.description}} &lt;/td&gt;
+      &lt;/ng-container&gt;
+    
+      &lt;ng-container matColumnDef&#x3D;&quot;observationType&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef&gt; Observation Type &lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let datastream&quot;&gt; {{datastream.observationType}} &lt;/td&gt;
+      &lt;/ng-container&gt;
+    
+      &lt;ng-container matColumnDef&#x3D;&quot;unitOfMeasurement&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef&gt; Unit of Measurement &lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let datastream&quot;&gt; {{datastream.unitOfMeasurement|json}} &lt;/td&gt;
+      &lt;/ng-container&gt;
+
+      &lt;ng-container matColumnDef&#x3D;&quot;action&quot;&gt;
+        &lt;th mat-header-cell *matHeaderCellDef&gt; Delete &lt;/th&gt;
+        &lt;td mat-cell *matCellDef&#x3D;&quot;let datastream&quot;&gt;
+          &lt;button mat-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;remove(datastream[&#x27;@iot.id&#x27;])&quot;&gt;
+            &lt;mat-icon&gt;delete&lt;/mat-icon&gt;
+          &lt;/button&gt;
+        &lt;/td&gt;
+      &lt;/ng-container&gt;
+    
+      &lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;&gt;&lt;/tr&gt;
+      &lt;tr mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    
+    &lt;div *ngIf&#x3D;&quot;!datastreams.datastreams || datastreams.datastreams.length &#x3D;&#x3D;&#x3D; 0&quot;&gt; No datastreams found! &lt;/div&gt;
+  &lt;/mat-tab&gt;
+  &lt;mat-tab label&#x3D;&quot;Create&quot;&gt;
+    &lt;create-datastream&gt;&lt;/create-datastream&gt;
+  &lt;/mat-tab&gt;
+&lt;/mat-tab-group&gt;
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><style>  table {    margin-top: 50px;    margin-left: 50px;    width: 70%;  }</style><!-- some other component is calling this. Do not render some parts, like toolbar, in this case --><app-toolbar *ngIf="!listURL"></app-toolbar><mat-tab-group>  <mat-tab label="Datastreams">    <table mat-table *ngIf="datastreams.datastreams && datastreams.datastreams.length > 0" [dataSource]="datastreams.datastreams" class="mat-elevation-z8">          <ng-container matColumnDef="name">        <th mat-header-cell *matHeaderCellDef> Name </th>        <td mat-cell *matCellDef="let datastream"> {{datastream.name}} </td>      </ng-container>          <ng-container matColumnDef="details">        <th mat-header-cell *matHeaderCellDef> Details </th>        <td mat-cell *matCellDef="let datastream">          <a [routerLink]="\'/datastream/\' + datastream[\'@iot.id\']">            View          </a>        </td>      </ng-container>          <ng-container matColumnDef="description">        <th mat-header-cell *matHeaderCellDef> Description </th>        <td mat-cell *matCellDef="let datastream"> {{datastream.description}} </td>      </ng-container>          <ng-container matColumnDef="observationType">        <th mat-header-cell *matHeaderCellDef> Observation Type </th>        <td mat-cell *matCellDef="let datastream"> {{datastream.observationType}} </td>      </ng-container>          <ng-container matColumnDef="unitOfMeasurement">        <th mat-header-cell *matHeaderCellDef> Unit of Measurement </th>        <td mat-cell *matCellDef="let datastream"> {{datastream.unitOfMeasurement|json}} </td>      </ng-container>      <ng-container matColumnDef="action">        <th mat-header-cell *matHeaderCellDef> Delete </th>        <td mat-cell *matCellDef="let datastream">          <button mat-button color="warn" (click)="remove(datastream[\'@iot.id\'])">            <mat-icon>delete</mat-icon>          </button>        </td>      </ng-container>          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>    </table>        <div *ngIf="!datastreams.datastreams || datastreams.datastreams.length === 0"> No datastreams found! </div>  </mat-tab>  <mat-tab label="Create">    <create-datastream></create-datastream>  </mat-tab></mat-tab-group></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DatastreamComponent', 'selector': 'app-datastream'},{'name': 'DatastreamCreateComponent', 'selector': 'create-datastream'},{'name': 'DatastreamDetailComponent', 'selector': 'app-datastream-detail'},{'name': 'DatastreamEditComponent', 'selector': 'edit-datastream'},{'name': 'FeatureOfInterestComponent', 'selector': 'app-feature-of-interest'},{'name': 'FeatureOfInterestCreateComponent', 'selector': 'create-feature-of-interest'},{'name': 'FeatureOfInterestDetailComponent', 'selector': 'app-feature-of-interest-detail'},{'name': 'FeatureOfInterestEditComponent', 'selector': 'edit-feature-of-interest'},{'name': 'HistoricalLocationComponent', 'selector': 'app-historical-location'},{'name': 'HistoricalLocationDetailComponent', 'selector': 'app-historical-location-detail'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LocationComponent', 'selector': 'app-location'},{'name': 'LocationDetailComponent', 'selector': 'app-location-detail'},{'name': 'LocationEditComponent', 'selector': 'edit-location'},{'name': 'LocationFormComponent', 'selector': 'form-location'},{'name': 'ObservationComponent', 'selector': 'app-observation'},{'name': 'ObservationCreateComponent', 'selector': 'create-observation'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationEditComponent', 'selector': 'edit-observation'},{'name': 'ObservedPropertyComponent', 'selector': 'app-observed-property'},{'name': 'ObservedPropertyCreateComponent', 'selector': 'create-observed-property'},{'name': 'ObservedPropertyDetailComponent', 'selector': 'app-observed-property-detail'},{'name': 'ObservedPropertyEditComponent', 'selector': 'edit-observed-property'},{'name': 'SensorComponent', 'selector': 'app-sensor'},{'name': 'SensorConnectComponent', 'selector': 'sensor-connect'},{'name': 'SensorCreateComponent', 'selector': 'create-sensor'},{'name': 'SensorDetailComponent', 'selector': 'app-sensor-detail'},{'name': 'SensorEditComponent', 'selector': 'edit-sensor'},{'name': 'ThingComponent', 'selector': 'app-thing'},{'name': 'ThingCreateComponent', 'selector': 'create-thing'},{'name': 'ThingDetailComponent', 'selector': 'app-thing-detail'},{'name': 'ThingEditComponent', 'selector': 'edit-thing'},{'name': 'ToolbarComponent', 'selector': 'app-toolbar'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'DatastreamComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DatastreamComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,709 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frost-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frost-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SensorDetailComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/sensor/sensor.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-sensor-detail</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./sensor-detail.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#sensor">sensor</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getSensor">getSensor</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(sensorService: <a href="../injectables/SensorService.html">SensorService</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/sensor/sensor.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>sensorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SensorService.html" target="_self" >SensorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSensor"></a>
+                    <span class="name">
+                        <b>
+                            getSensor
+                        </b>
+                        <a href="#getSensor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSensor()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/sensor/sensor.component.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/sensor/sensor.component.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sensor"></a>
+                        <span class="name">
+                            <b>
+                            sensor</b>
+                            <a href="#sensor"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/sensor/sensor.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                            title</b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;Sensor&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/sensor/sensor.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { SensorService } from &#x27;./sensor.service&#x27;;
+import { ObservedPropertyService } from &#x27;../observed-property/service&#x27;;
+import { DatastreamService } from &#x27;../datastream/service&#x27;;
+import { ToolbarComponent } from &#x27;../toolbar/toolbar.component&#x27;;
+import { switchMap } from &#x27;rxjs/operators&#x27;;
+
+/* Display the list of sensors available.
+ * An input property &#x60;listURL&#x60; is defined on this component, that allows
+ * a user of this component to specify the URL from which the list
+ * of sensors will be fetched to populate the table.
+ *
+ * If the &#x60;listURL&#x60; is empty, the component assumes that all sensors
+ * are to be listed.
+ */
+@Component({
+  selector: &#x27;app-sensor&#x27;,
+  templateUrl: &#x27;./sensor.component.html&#x27;
+  // styleUrls: [&#x27;./sensor.component.css&#x27;]
+})
+export class SensorComponent implements OnInit {
+  title &#x3D; &#x27;Sensors&#x27;;
+  sensors;
+  displayedColumns: string[] &#x3D; [&#x27;name&#x27;, &#x27;description&#x27;, &#x27;metadata&#x27;, &#x27;details&#x27;,];
+
+  constructor(
+    private sensorService: SensorService
+  ) { }
+
+  /* Get list of sensors */
+  getSensors() {
+    this.sensors &#x3D; this.sensorService.getSensorsList()
+      .subscribe(data &#x3D;&gt; this.sensors &#x3D; {
+        sensors: data[&#x27;value&#x27;],
+        count:  data[&#x27;@iot.count&#x27;],
+        next: data[&#x27;@iot.nextLink&#x27;]
+    });
+  }
+
+  ngOnInit() {
+    this.getSensors()
+  }
+}
+
+/* Display a single sensor in detail.
+ * In form of tabs:
+ *  - properties of the sensor
+ *  - editing the sensor
+ */
+@Component({
+  selector: &#x27;app-sensor-detail&#x27;,
+  templateUrl: &#x27;./sensor-detail.component.html&#x27;
+  // styleUrls: [&#x27;./sensor.component.css&#x27;]
+})
+export class SensorDetailComponent implements OnInit {
+  title &#x3D; &#x27;Sensor&#x27;;
+  sensor;
+
+  constructor(
+    private sensorService: SensorService,
+    private route: ActivatedRoute,
+  ) { }
+
+  /* Get a single sensor and associated properties */
+  getSensor() {
+    this.sensor &#x3D; this.route.paramMap.pipe(
+      switchMap(params &#x3D;&gt; this.sensorService.getSensorDetail(params.get(&#x27;id&#x27;))))
+          .subscribe(data &#x3D;&gt; this.sensor &#x3D; {
+              name: data[&#x27;name&#x27;],
+              description: data[&#x27;description&#x27;],
+              metadata: data[&#x27;metadata&#x27;],
+              encodingType: data[&#x27;encodingType&#x27;],
+        });
+  }
+
+  ngOnInit() {
+    this.getSensor()
+  }
+}
+
+/**
+ * Connect the sensor to a thing.
+ * Connecting the sensor gives us a new datastream.
+ */
+@Component({
+  selector: &#x27;sensor-connect&#x27;,
+  templateUrl: &#x27;./sensor-connect.component.html&#x27;
+  // styleUrls: [&#x27;./sensor.component.css&#x27;]
+})
+export class SensorConnectComponent implements OnInit {
+  title &#x3D; &#x27;Sensors&#x27;;
+  @Input()
+  thingID;
+  sensors;
+  unitsOfMeasurement &#x3D; [
+    {
+      &quot;name&quot;: &quot;Temperature&quot;,
+      &quot;value&quot;: {
+        &quot;symbol&quot;: &quot;degC&quot;,
+        &quot;name&quot;: &quot;Degree Celsius&quot;,
+        &quot;definition&quot;: &quot;http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#DegreeCelsius&quot;
+      }
+    },
+    {
+      &quot;name&quot;: &quot;Enter manually&quot;,
+      &quot;value&quot;: {},
+    },
+  ];
+  observationTypes &#x3D; [
+    {
+      &quot;name&quot;: &quot;Category Observation&quot;,
+      &quot;value&quot;: &quot;http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CategoryObservation&quot;,
+    },
+    {
+      &quot;name&quot;: &quot;Count Observation&quot;,
+      &quot;value&quot;: &quot;http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation&quot;,
+    },
+    {
+      &quot;name&quot;: &quot;Measurement&quot;,
+      &quot;value&quot;: &quot;http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement&quot;,
+    },
+    {
+      &quot;name&quot;: &quot;Observation&quot;,
+      &quot;value&quot;: &quot;http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation&quot;,
+    },
+    {
+      &quot;name&quot;: &quot;Truth Observation&quot;,
+      &quot;value&quot;: &quot;http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_TruthObservation&quot;,
+    },
+  ];
+  observedProperties;
+  displayedColumns: string[] &#x3D; [&#x27;name&#x27;, &#x27;description&#x27;, &#x27;metadata&#x27;, &#x27;action&#x27;,];
+
+  // form values
+  sensorID;
+  observedPropertyID;
+  unitOfMeasurement;
+  chooseAmongOptions &#x3D; true;
+  unitOfMeasurementStr;
+  datastreamName;
+  datastreamDescription;
+
+  constructor(
+    private sensorService: SensorService,
+    private observedPropertyService: ObservedPropertyService,
+    private datastreamService: DatastreamService,
+  ) { }
+
+  /* get the list of sensors, to choose which one to connect */
+  getSensors() {
+    this.sensors &#x3D; this.sensorService.getSensorsList()
+      .subscribe(data &#x3D;&gt; this.sensors &#x3D; {
+        sensors: data[&#x27;value&#x27;],
+        next: data[&#x27;@iot.nextLink&#x27;]
+    });
+  }
+
+  /* get list of observed properties, to choose which one to connect */
+  getObservedProperties() {
+    this.observedProperties &#x3D; this.observedPropertyService.getList(&#x27;&#x27;)
+      .subscribe(data &#x3D;&gt; this.observedProperties &#x3D; {
+        observedProperties: data[&#x27;value&#x27;],
+        next: data[&#x27;@iot.nextLink&#x27;],
+      })
+  }
+
+  /* check whether the unit of measurement is one that we have provided, or the user wishes to
+   * enter themselves
+   */
+  checkUnitValue(e) {
+    console.log(e)
+    if (Object.keys(e).length &#x3D;&#x3D; 0) {
+      this.chooseAmongOptions &#x3D; false;
+    }
+    console.log(this.chooseAmongOptions)
+  }
+
+  onSubmit(f) {
+    console.log(f.value)
+    if (!this.chooseAmongOptions) {
+      try {
+        f.value.unitOfMeasurement &#x3D; JSON.parse(f.value.unitOfMeasurementStr)
+      }
+      catch (e) {
+        console.log(&quot;Invalid Unit Of measurement entered&quot;)
+        return
+      }
+    }
+    var payload &#x3D; {
+      &quot;name&quot;: f.value.datastreamName,
+      &quot;description&quot;: f.value.datastreamDescription,
+      &quot;observationType&quot;: f.value.observationType,
+      &quot;unitOfMeasurement&quot;: f.value.unitOfMeasurement,
+      &quot;Thing&quot;: {&quot;@iot.id&quot;: this.thingID},
+      &quot;ObservedProperty&quot;: {&quot;@iot.id&quot;: f.value.observedPropertyID},
+      &quot;Sensor&quot;: {&quot;@iot.id&quot;: f.value.sensorID},
+    }
+    console.log(payload)
+    this.datastreamService.create(payload).subscribe(
+        data &#x3D;&gt; {
+          alert(&quot;Created new datastream&quot;)
+          window.location.href&#x3D;&quot;/#/datastreams&quot;
+        },
+        err &#x3D;&gt; console.log(err),
+      )
+  }
+
+  ngOnInit() {
+    this.getSensors()
+    this.getObservedProperties()
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-toolbar&gt;&lt;/app-toolbar&gt;
+&lt;mat-tab-group&gt;
+  &lt;mat-tab label&#x3D;&quot;Properties&quot;&gt;
+    &lt;mat-card&gt;
+      &lt;p&gt; Name: {{ sensor.name }} &lt;/p&gt;
+      &lt;p&gt; Description: {{ sensor.description }} &lt;/p&gt;
+      &lt;p&gt; Metadata: {{ sensor.metadata }} &lt;/p&gt;
+    &lt;/mat-card&gt;
+  &lt;/mat-tab&gt;
+  &lt;mat-tab label&#x3D;&quot;Edit&quot;&gt;
+    &lt;edit-sensor
+      [id]&#x3D;&quot;sensor.id&quot;
+      [name]&#x3D;&quot;sensor.name&quot;
+      [description]&#x3D;&quot;sensor.description&quot;
+      [encodingType]&#x3D;&quot;sensor.encodingType&quot;
+      [metadata]&#x3D;&quot;sensor.metadata&quot;
+    &gt;&lt;/edit-sensor&gt;
+  &lt;/mat-tab&gt;
+&lt;/mat-tab-group&gt;
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-toolbar></app-toolbar><mat-tab-group>  <mat-tab label="Properties">    <mat-card>      <p> Name: {{ sensor.name }} </p>      <p> Description: {{ sensor.description }} </p>      <p> Metadata: {{ sensor.metadata }} </p>    </mat-card>  </mat-tab>  <mat-tab label="Edit">    <edit-sensor      [id]="sensor.id"      [name]="sensor.name"      [description]="sensor.description"      [encodingType]="sensor.encodingType"      [metadata]="sensor.metadata"    ></edit-sensor>  </mat-tab></mat-tab-group></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DatastreamComponent', 'selector': 'app-datastream'},{'name': 'DatastreamCreateComponent', 'selector': 'create-datastream'},{'name': 'DatastreamDetailComponent', 'selector': 'app-datastream-detail'},{'name': 'DatastreamEditComponent', 'selector': 'edit-datastream'},{'name': 'FeatureOfInterestComponent', 'selector': 'app-feature-of-interest'},{'name': 'FeatureOfInterestCreateComponent', 'selector': 'create-feature-of-interest'},{'name': 'FeatureOfInterestDetailComponent', 'selector': 'app-feature-of-interest-detail'},{'name': 'FeatureOfInterestEditComponent', 'selector': 'edit-feature-of-interest'},{'name': 'HistoricalLocationComponent', 'selector': 'app-historical-location'},{'name': 'HistoricalLocationDetailComponent', 'selector': 'app-historical-location-detail'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LocationComponent', 'selector': 'app-location'},{'name': 'LocationDetailComponent', 'selector': 'app-location-detail'},{'name': 'LocationEditComponent', 'selector': 'edit-location'},{'name': 'LocationFormComponent', 'selector': 'form-location'},{'name': 'ObservationComponent', 'selector': 'app-observation'},{'name': 'ObservationCreateComponent', 'selector': 'create-observation'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationEditComponent', 'selector': 'edit-observation'},{'name': 'ObservedPropertyComponent', 'selector': 'app-observed-property'},{'name': 'ObservedPropertyCreateComponent', 'selector': 'create-observed-property'},{'name': 'ObservedPropertyDetailComponent', 'selector': 'app-observed-property-detail'},{'name': 'ObservedPropertyEditComponent', 'selector': 'edit-observed-property'},{'name': 'SensorComponent', 'selector': 'app-sensor'},{'name': 'SensorConnectComponent', 'selector': 'sensor-connect'},{'name': 'SensorCreateComponent', 'selector': 'create-sensor'},{'name': 'SensorDetailComponent', 'selector': 'app-sensor-detail'},{'name': 'SensorEditComponent', 'selector': 'edit-sensor'},{'name': 'ThingComponent', 'selector': 'app-thing'},{'name': 'ThingCreateComponent', 'selector': 'create-thing'},{'name': 'ThingDetailComponent', 'selector': 'app-thing-detail'},{'name': 'ThingEditComponent', 'selector': 'edit-thing'},{'name': 'ToolbarComponent', 'selector': 'app-toolbar'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SensorDetailComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SensorDetailComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -8,6 +8,11 @@ import { ThingService } from './thing/thing.service';
 import { SensorService } from './sensor/sensor.service';
 import { FeatureOfInterestService } from './feature-of-interest/service';
 
+/* Display the home dashboard.
+ * This component queries all the resources available, and gets their count.
+ * It then renders the dashboard, with all resources, the count, and their
+ * corresponding link.
+ */
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -34,6 +39,7 @@ export class HomeComponent implements OnInit {
   featuresOfInterest;
   observedProperties;
 
+  /* Get the list endpoint of all resources, along with count */
   getList() {
     this.locations = this.locationService.getLocationsList('')
       .subscribe(data => this.locations = data['@iot.count']);

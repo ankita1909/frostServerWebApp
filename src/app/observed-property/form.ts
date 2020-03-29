@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ObservedPropertyService } from './service';
 
+/* Form to create a new observed property */
 @Component({
   selector: 'create-observed-property',
   templateUrl: './form.html',
@@ -26,6 +27,7 @@ export class ObservedPropertyCreateComponent {
 }
 
 
+/* Form to edit a given observed property */
 @Component({
   selector: 'edit-observed-property',
   templateUrl: './form.html',

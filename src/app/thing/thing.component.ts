@@ -4,6 +4,14 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 
+/* Display the list of things available.
+ * An input property `listURL` is defined on this component, that allows
+ * a user of this component to specify the URL from which the list
+ * of things will be fetched to populate the table.
+ *
+ * If the `listURL` is empty, the component assumes that all things
+ * are to be listed.
+ */
 @Component({
   selector: 'app-thing',
   templateUrl: './thing.component.html'
@@ -20,6 +28,7 @@ export class ThingComponent implements OnInit {
     private thingService: ThingService
   ) { }
 
+  /* Get list of things */
   getThings() {
     this.things = this.thingService.getThingsList(this.listURL)
       .subscribe(data => this.things = {
@@ -34,6 +43,11 @@ export class ThingComponent implements OnInit {
   }
 }
 
+/* Display a single thing in detail.
+ * In form of tabs:
+ *  - properties of the things
+ *  - editing the thing
+ */
 @Component({
   selector: 'app-thing-detail',
   templateUrl: './thing-detail.component.html'
@@ -48,6 +62,7 @@ export class ThingDetailComponent implements OnInit {
     private route: ActivatedRoute,
   ) { }
 
+  /* Get a single thing and associated properties */
   getThing() {
     this.thing = this.route.paramMap.pipe(
       switchMap(params => this.thingService.getThingDetail(params.get('id'))))

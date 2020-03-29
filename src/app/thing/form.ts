@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ThingService } from './thing.service';
 
+/* Form to create a new thing */
 @Component({
   selector: 'create-thing',
   templateUrl: './form.html',
@@ -28,7 +29,7 @@ export class ThingCreateComponent {
   }
 }
 
-
+/* Form to edit a given thing */
 @Component({
   selector: 'edit-thing',
   templateUrl: './form.html',

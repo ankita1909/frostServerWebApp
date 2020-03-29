@@ -6,6 +6,14 @@ import { DatastreamService } from '../datastream/service';
 import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { switchMap } from 'rxjs/operators';
 
+/* Display the list of sensors available.
+ * An input property `listURL` is defined on this component, that allows
+ * a user of this component to specify the URL from which the list
+ * of sensors will be fetched to populate the table.
+ *
+ * If the `listURL` is empty, the component assumes that all sensors
+ * are to be listed.
+ */
 @Component({
   selector: 'app-sensor',
   templateUrl: './sensor.component.html'
@@ -20,6 +28,7 @@ export class SensorComponent implements OnInit {
     private sensorService: SensorService
   ) { }
 
+  /* Get list of sensors */
   getSensors() {
     this.sensors = this.sensorService.getSensorsList()
       .subscribe(data => this.sensors = {
@@ -34,6 +43,11 @@ export class SensorComponent implements OnInit {
   }
 }
 
+/* Display a single sensor in detail.
+ * In form of tabs:
+ *  - properties of the sensor
+ *  - editing the sensor
+ */
 @Component({
   selector: 'app-sensor-detail',
   templateUrl: './sensor-detail.component.html'
@@ -48,6 +62,7 @@ export class SensorDetailComponent implements OnInit {
     private route: ActivatedRoute,
   ) { }
 
+  /* Get a single sensor and associated properties */
   getSensor() {
     this.sensor = this.route.paramMap.pipe(
       switchMap(params => this.sensorService.getSensorDetail(params.get('id'))))
@@ -64,7 +79,10 @@ export class SensorDetailComponent implements OnInit {
   }
 }
 
-
+/**
+ * Connect the sensor to a thing.
+ * Connecting the sensor gives us a new datastream.
+ */
 @Component({
   selector: 'sensor-connect',
   templateUrl: './sensor-connect.component.html'
@@ -129,6 +147,7 @@ export class SensorConnectComponent implements OnInit {
     private datastreamService: DatastreamService,
   ) { }
 
+  /* get the list of sensors, to choose which one to connect */
   getSensors() {
     this.sensors = this.sensorService.getSensorsList()
       .subscribe(data => this.sensors = {
@@ -137,6 +156,7 @@ export class SensorConnectComponent implements OnInit {
     });
   }
 
+  /* get list of observed properties, to choose which one to connect */
   getObservedProperties() {
     this.observedProperties = this.observedPropertyService.getList('')
       .subscribe(data => this.observedProperties = {
@@ -145,6 +165,9 @@ export class SensorConnectComponent implements OnInit {
       })
   }
 
+  /* check whether the unit of measurement is one that we have provided, or the user wishes to
+   * enter themselves
+   */
   checkUnitValue(e) {
     console.log(e)
     if (Object.keys(e).length == 0) {

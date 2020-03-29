@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ObservationService } from './service';
 
+/* Form to create a new observation */
 @Component({
   selector: 'create-observation',
   templateUrl: './form.html',
@@ -26,6 +27,7 @@ export class ObservationCreateComponent {
 }
 
 
+/* Form to edit a given observation */
 @Component({
   selector: 'edit-observation',
   templateUrl: './form.html',

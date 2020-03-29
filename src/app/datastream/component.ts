@@ -8,6 +8,14 @@ import { ObservationComponent } from '../observation/component';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 
+/* Display the list of datastreams available.
+ * An input property `listURL` is defined on this component, that allows
+ * a user of this component to specify the URL from which the list
+ * of datastreams will be fetched to populate the table.
+ *
+ * If the `listURL` is empty, the component assumes that all datastreams
+ * are to be listed.
+ */
 @Component({
   selector: 'app-datastream',
   templateUrl: './component-list.html'
@@ -23,6 +31,7 @@ export class DatastreamComponent implements OnInit {
     private datastreamService: DatastreamService,
   ) { }
 
+  /* Get list of datastreams */
   getDatastreams() {
     this.datastreams = this.datastreamService.getList(this.listURL)
       .subscribe(data => this.datastreams = {
@@ -32,6 +41,7 @@ export class DatastreamComponent implements OnInit {
     });
   }
 
+  /* Delete a datastream specified by datastream ID */
   remove(id) {
     this.datastreamService.remove(id).subscribe(
       data => {
@@ -47,6 +57,14 @@ export class DatastreamComponent implements OnInit {
   }
 }
 
+/* Display a single datastream in detail.
+ * In form of tabs:
+ *  - thing
+ *  - sensor
+ *  - observed property
+ *  - properties of the datastream
+ *  - editing the datastream
+ */
 @Component({
   selector: 'app-datastream-detail',
   templateUrl: './component-detail.html'
@@ -66,6 +84,7 @@ export class DatastreamDetailComponent implements OnInit {
     private route: ActivatedRoute,
   ) { }
 
+  /* Get a single datastream and associated sensor, thing and observed property */
   getDatastream() {
     this.datastream = this.route.paramMap.pipe(
       switchMap(params => this.datastreamService.getDetail(params.get('id'))))

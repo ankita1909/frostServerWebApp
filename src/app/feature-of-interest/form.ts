@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { FeatureOfInterestService } from './service';
 
+/* Form to create a new datastream */
 @Component({
   selector: 'create-feature-of-interest',
   templateUrl: './form.html',
@@ -31,6 +32,7 @@ export class FeatureOfInterestCreateComponent {
 }
 
 
+/* Form to edit a given datastream */
 @Component({
   selector: 'edit-feature-of-interest',
   templateUrl: './form.html',

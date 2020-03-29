@@ -4,6 +4,14 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 
+/* Display the list of observed properties available.
+ * An input property `listURL` is defined on this component, that allows
+ * a user of this component to specify the URL from which the list
+ * of observed properties will be fetched to populate the table.
+ *
+ * If the `listURL` is empty, the component assumes that all observed properties
+ * are to be listed.
+ */
 @Component({
   selector: 'app-observed-property',
   templateUrl: './component-list.html'
@@ -19,6 +27,7 @@ export class ObservedPropertyComponent implements OnInit {
     private observedPropertyService: ObservedPropertyService,
   ) { }
 
+  /* Get list of observed properties */
   getList() {
     this.observedProperties = this.observedPropertyService.getList(this.listURL)
       .subscribe(data => this.observedProperties = {
@@ -33,6 +42,11 @@ export class ObservedPropertyComponent implements OnInit {
   }
 }
 
+/* Display a single observed property in detail.
+ * In form of tabs:
+ *  - properties of the observed property
+ *  - editing the observed property
+ */
 @Component({
   selector: 'app-observed-property-detail',
   templateUrl: './component-detail.html'

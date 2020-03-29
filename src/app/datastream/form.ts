@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { DatastreamService } from './service';
 
+/* Form to create a new datastream */
 @Component({
   selector: 'create-datastream',
   templateUrl: './form.html',
@@ -40,7 +41,7 @@ export class DatastreamCreateComponent {
   }
 }
 
-
+/* Form to edit a given datastream */
 @Component({
   selector: 'edit-datastream',
   templateUrl: './form.html',

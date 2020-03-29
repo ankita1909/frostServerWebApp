@@ -4,6 +4,15 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 
+/**
+ * Display the list of features of interest available.
+ * An input property `listURL` is defined on this component, that allows
+ * a user of this component to specify the URL from which the list
+ * of objects will be fetched to populate the table.
+ *
+ * If the `listURL` is empty, the component assumes that all objects
+ * are to be listed.
+ */
 @Component({
   selector: 'app-feature-of-interest',
   templateUrl: './component-list.html'
@@ -19,6 +28,7 @@ export class FeatureOfInterestComponent implements OnInit {
     private featureOfInterestService: FeatureOfInterestService,
   ) { }
 
+  /* Get list of features of interest. */
   getList() {
     this.featuresOfInterest = this.featureOfInterestService.getList(this.listURL)
       .subscribe(data => this.featuresOfInterest = {
@@ -33,6 +43,12 @@ export class FeatureOfInterestComponent implements OnInit {
   }
 }
 
+/**
+ * Display a single feature of interest in detail.
+ * In form of tabs:
+ *  - properties
+ *  - edit this feature of interest
+ */
 @Component({
   selector: 'app-feature-of-interest-detail',
   templateUrl: './component-detail.html'
@@ -46,6 +62,7 @@ export class FeatureOfInterestDetailComponent implements OnInit {
     private route: ActivatedRoute,
   ) { }
 
+  /* Get a single feature of interest */
   getDetail() {
     this.featureOfInterest = this.route.paramMap.pipe(
       switchMap(params => this.featureOfInterestService.getDetail(params.get('id'))))

@@ -1,5 +1,13 @@
 # FrostFrontend
 
+## Setup
+
+1. Install node >= 10 and npm from [here](https://nodejs.org/en/).
+2. Install angular
+```
+npm install -g @angular/cli
+```
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
 
 ## Development server
@@ -14,14 +22,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## General Architecture
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The app is divided into components. Each of the resource components has a list view and a detail view. The detail view contains the detailed properties of a single resource, with option to edit them. The list view shows a table with some important properties.
